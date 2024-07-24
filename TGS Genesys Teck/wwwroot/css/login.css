@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+:root{
+    --purple: #002333;
+    --black: #154666;
+    --white: #0099DD;
+    --grey: #DFDFDE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 a{
+    color: var(--black) !important;
+    font-family: 'Dancing Script', cursive !important;
+    font-weight: 700 !important;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-image: 
+        linear-gradient(to bottom, 
+        var(--black), 
+        var(--black),
+        var(--black),
+        var(--black)) ;
+}
+
+.custom_container {
+    margin-top: 5em;
+    max-width: 500px;
+    max-height: 650px;
+    /* Ajuste conforme necessário */
+    padding: 50px;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    background-color: var(--white) ;
+    box-shadow: 0px 0px 23px -6px var(--purple);
+}
+
+.custom_logo {
+    max-width: 500px;
+    /* Ajuste conforme necessário */
+    padding: 20px;
+    border: none;
+    text-align: center;
+}
+
+.form-outline {
+    margin-bottom: 100px;
+}
+
+.form-outline input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+}
+
+.form-outline input:focus, button:focus{
+    outline: 4px solid var(--black) !important;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input {
+    margin-right: 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+button{
+    background-color: var(--purple) !important;
+    border: none !important;
+    color: var(--grey) !important;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: var(--grey) !important;
+    color: var(--purple) !important;
+}
+
+i , a{
+    color: var(--black) !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: var(--grey) !important;
+    background-color: var(--purple) !important;
+}
+
+input, button:not(.btn-link) {
+    width: 400px;
+}
+
+@media (max-width: 450px) {
+
+    body {
+        align-items: center;
+    }
+
+    #custom_container {
+        width: 90%;
+        margin-top: 0;
+        padding: 1em;
+    }
+    
+    #send-button{
+        width: 100%;
+        margin: auto;
+    }
+}

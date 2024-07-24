@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TGS_Genesys_Teck</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Title -->
+    <title>TGS Genesys Teck</title>
+
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="~/vendors/swiper/swiper.css" />
+
+    <!-- Magnific-Popup CSS -->
+    <link rel="stylesheet" href="~/vendors/magnific-popup/magnific-popup.css" />
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="~/css/main.css" />
+    <link rel="stylesheet" href="~/css/submenu.css" />
+    <link rel="stylesheet" href="~/css/responsive.css" />
+   
+</head>
+<body>
+
+    <!-------------------- Header Area (Start) -------------------->
+    <header class="header">
+
+        <!-- Logo -->
+        <a class="logo" href="#home" style="display: flex; align-items: center; text-decoration: none;">
+            <img src="~/images/Home/TGSLOGO.jpg" alt="About-Image"
+                 style="width: 50px; height: 50px; margin-right: 10px;">
+            <h2 style="margin: 0; font-size: 24px; color: aliceblue;">TGS Genesys</h2>
+        </a>
+        <!-- Logo End -->
+        <!-- Navbar -->
+        <nav class="navbar" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fas fa-home fa-lg" aria-hidden="true" style="color: white;"></i>
+                <a href="#home" style="margin-left: 10px; color: white;">Inicio</a>
+            </span>
+
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fas fa-info-circle fa-lg" aria-hidden="true" style="color: white;"></i>
+                <a href="#about" style="margin-left: 10px; color: white;">sobre</a>
+            </span>
+
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fas fa-gavel fa-lg" aria-hidden="true" style="color: white;"></i>
+                <a href="#service" style="margin-left: 10px; color: white;">Serviço</a>
+            </span>
+
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fas fa-window-restore fa-lg" aria-hidden="true" style="color: white;"></i>
+                <a href="#portfolio" style="margin-left: 10px; color: white;">Portfolio</a>
+            </span>
+
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fa fa-users fa-lg" aria-hidden="true" style="color: white;"></i>
+                <a href="#testimonial" style="margin-left: 10px; color: white;">Depoimento</a>
+            </span>
+
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fa fa-file fa-lg" aria-hidden="true" style="color: white;"></i>
+                <a href="#blog" style="margin-left: 10px; color: white;">Noticias</a>
+            </span>
+
+            <span style="display: flex; align-items: center; margin-right: 20px;">
+                <i class="fa fa-phone-square fa-lg" aria-hidden="true" style="color: white;"></i>
+                <a href="#contact" style="margin-left: 10px; color: white;">Contato</a>
+            </span>
+
+            <div class="dropdown" style="position: relative; display: inline-block;">
+                <span style="display: flex; align-items: center; margin-right: 20px;">
+                    <i class="fa fa-user" aria-hidden="true" style="color: white;"></i>
+                    <a href="Login.html" style="margin-left: 10px;">Login</a>
+                </span>
+                <div class="dropdown-content"
+                     style="display: none; position: absolute; background-color: #154666; width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; padding: 8px; border-radius: 3%;">
+
+                    <!-- Item de menu 1: Usuarios -->
+                    <a href="UsuarioIndex.html"
+                       style="color: white; padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fa fa-users" aria-hidden="true" style="margin-right: 9px; color: white;"></i>
+                        Usuarios
+                    </a>
+
+                    <!-- Item de menu 2: Agendamento Admin -->
+                    <a href="AgendamentoIndex.html"
+                       style="color: white; padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 9px; color: white;"></i>
+
+                        Agendamento Admin
+                    </a>
+
+                    <!-- Item de menu 3: Agendamento User -->
+                    <a href="UsuarioIndex.html"
+                       style="color: white; padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 9px; color: white;"></i>
+
+                        Agendamento User
+                    </a>
+
+                    <!-- Item de menu 4: Cadastro Agendamento -->
+                    <a href="CadastroAgendamento.html"
+                       style="color: white; padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fa fa-check-square" aria-hidden="true" style="margin-right: 9px; color: white;"></i>
+
+                        Cadastro Agendamento
+                    </a>
+                    <a href="ServicoIndex.html"
+                       style="color: white; padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fas fa-gavel fa-lg" aria-hidden="true" style="margin-right: 9px; color: white;"></i>
+
+                        Serviços
+                    </a>
+
+                    <!-- Item de menu 5: Relatório -->
+                    <a href=""
+                       style="color: white; padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
+                        <i class="fa fa-file" aria-hidden="true" style="margin-right: 9px; color: white;"></i>
+
+                        Relatório
+                    </a>
+
+                </div>
+
+            </div>
+        </nav>
+
+
+
+        <!-- Menubar -->
+        <div class="fas fa-bars" id="menu-btn"></div>
+
+    </header>
+    <!-------------------- Header Area (End) -------------------->
+    
+    <div>
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-------------------- Footer Area (Start) -------------------->
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1654787885&extra_1=s%7Cc%7C318628673247%7Ce%7Cfacebook%27%7C&placement=&creative=318628673247&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1654787885%26adgroupid%3D62478117254%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D1001541%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad_source=1&gclid=Cj0KCQjw4MSzBhC8ARIsAPFOuyX7asqA8jgimCcPt2WJsvQ6hJcsCIGhM5cxqs9tWoTq0wljemSVvTYaArcREALw_wcB"
+               class="fab fa-facebook-f"></a>
+            <a href="https://x.com/?lang=pt-br" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+            <a href="https://br.linkedin.com/" class="fab fa-linkedin-in"></a>
+        </div>
+
+        <div class="content">
+            <p>created by <span>AS_Designs</span> | all rights reserved</p>
+        </div>
+    </footer>
+    <!-------------------- Footer Area (End) -------------------->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!-- Magnific-Popup JS -->
+    <script src="~/vendors/magnific-popup/jquery.magnific-popup.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    
+</body>
+</html>

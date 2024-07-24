@@ -1,0 +1,30 @@
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\bin\Debug\net8.0\appsettings.json
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\bin\Debug\net8.0\TGS Genesys Teck.staticwebassets.runtime.json
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\bin\Debug\net8.0\TGS Genesys Teck.exe
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\bin\Debug\net8.0\TGS Genesys Teck.deps.json
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\bin\Debug\net8.0\TGS Genesys Teck.runtimeconfig.json
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\bin\Debug\net8.0\TGS Genesys Teck.dll
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\bin\Debug\net8.0\TGS Genesys Teck.pdb
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\TGS Genesys Teck.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\TGS Genesys Teck.AssemblyInfoInputs.cache
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\TGS Genesys Teck.AssemblyInfo.cs
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\TGS Genesys Teck.csproj.CoreCompileInputs.cache
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\TGS Genesys Teck.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\TGS Genesys Teck.RazorAssemblyInfo.cache
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\TGS Genesys Teck.RazorAssemblyInfo.cs
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\staticwebassets\msbuild.TGS Genesys Teck.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\staticwebassets\msbuild.build.TGS Genesys Teck.props
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.TGS Genesys Teck.props
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.TGS Genesys Teck.props
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\scopedcss\bundle\TGS Genesys Teck.styles.css
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\scopedcss\projectbundle\TGS Genesys Teck.bundle.scp.css
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\TGS Genesys Teck.dll
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\refint\TGS Genesys Teck.dll
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\TGS Genesys Teck.pdb
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\TGS Genesys Teck.genruntimeconfig.cache
+C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\obj\Debug\net8.0\ref\TGS Genesys Teck.dll

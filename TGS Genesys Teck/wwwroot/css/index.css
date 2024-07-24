@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+:root {
+    --purple: #002333;
+    --black: #154666;
+    --white: #D2E8E3;
+    --grey: #DFDFDE;
+   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+body{
+    background-color: #154666;
+}
+
+html {
+    min-height: 100vh;
+}
+main{
+    min-height: calc(100vh - 100px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.bem-vindo{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--black) !important;
+}
+
+p {
+    color: var(--white);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--grey);
+    border-radius: 50px;
+}
+
+input:focus, select:focus{
+    outline: 4px solid var(--purple) !important;
+}
+select option:hover{
+    background-color: var(--black);
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 3.5em 0 2em 0;
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;    
+}
+
+.section-title h2 {
+    font-size: 30px;
+    font-weight: bold;
+    /* margin-bottom: 20px; */
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--white);
+}
+.modal-header{
+    background-color: #020d2d;
+}
+.modal-header h1 {
+        color: var(--white);
+        font-size: 30px;
+}
+.modal-body {
+    background-color: #B4BEC9;
+}
+
+
+footer {
+    max-height: 85px;
+    padding-top: .8em;
+}
+
+
+.page-maneger{
+    background-color: #B2BEBF;
+    margin-top: 2.5em;
+    border-radius: 8px;
+    box-shadow: 2px 0 10px -2px var(--purple);
+    height: 590px;
+    overflow: hidden;
+}
+/*--------------------------------------------------------------
+# Butao voltar
+--------------------------------------------------------------*/
+button{
+    background-color: var(--grey) !important;
+    border: none !important;
+    color: var(--purple) !important;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: #3E7C59 !important;
+    color: #00BBC9 !important;
+    border: 1px solid #802922 !important;
+}

@@ -1,0 +1,741 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TGS Genesys Teck.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TGS Genesys Teck.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\css\\submenu.css",
+      "PackagePath": "staticwebassets\\css\\submenu.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\About\\genesysteck.jpg",
+      "PackagePath": "staticwebassets\\images\\About\\genesysteck.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Blogs\\download.jpg",
+      "PackagePath": "staticwebassets\\images\\Blogs\\download.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Blogs\\image.png",
+      "PackagePath": "staticwebassets\\images\\Blogs\\image.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Blogs\\image_copy.png",
+      "PackagePath": "staticwebassets\\images\\Blogs\\image_copy.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Blogs\\imagecopy.png",
+      "PackagePath": "staticwebassets\\images\\Blogs\\imagecopy.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Blogs\\n.webp",
+      "PackagePath": "staticwebassets\\images\\Blogs\\n.webp"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Blogs\\nhhh.jpg",
+      "PackagePath": "staticwebassets\\images\\Blogs\\nhhh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Blogs\\ni.jpg",
+      "PackagePath": "staticwebassets\\images\\Blogs\\ni.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Blogs\\nj.jpg",
+      "PackagePath": "staticwebassets\\images\\Blogs\\nj.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Blogs\\nkk.jpg",
+      "PackagePath": "staticwebassets\\images\\Blogs\\nkk.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Blogs\\nt.jpeg",
+      "PackagePath": "staticwebassets\\images\\Blogs\\nt.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Blogs\\nt.webp",
+      "PackagePath": "staticwebassets\\images\\Blogs\\nt.webp"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Blogs\\nty.webp",
+      "PackagePath": "staticwebassets\\images\\Blogs\\nty.webp"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Blogs\\portfolio....jpg",
+      "PackagePath": "staticwebassets\\images\\Blogs\\portfolio....jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Home\\TGSLOGO.jpg",
+      "PackagePath": "staticwebassets\\images\\Home\\TGSLOGO.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Portfolio\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\Portfolio\\images.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Portfolio\\n.webp",
+      "PackagePath": "staticwebassets\\images\\Portfolio\\n.webp"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Portfolio\\portfolio....jpg",
+      "PackagePath": "staticwebassets\\images\\Portfolio\\portfolio....jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Portfolio\\portfolio...j.jpg",
+      "PackagePath": "staticwebassets\\images\\Portfolio\\portfolio...j.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Portfolio\\portfolio.jpg",
+      "PackagePath": "staticwebassets\\images\\Portfolio\\portfolio.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Portfolio\\portifolio..i.jpg",
+      "PackagePath": "staticwebassets\\images\\Portfolio\\portifolio..i.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Portfolio\\portifolio..o.jpg",
+      "PackagePath": "staticwebassets\\images\\Portfolio\\portifolio..o.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Portfolio\\portifolio..p.jpg",
+      "PackagePath": "staticwebassets\\images\\Portfolio\\portifolio..p.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Testimonials\\df.jpg",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\df.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Testimonials\\dh.jpg",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\dh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Testimonials\\dk.webp",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\dk.webp"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Testimonials\\dl.jpg",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\dl.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Testimonials\\dp.webp",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\dp.webp"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Testimonials\\dr.jpg",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\dr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Testimonials\\dw.jpg",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\dw.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Testimonials\\dy.webp",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\dy.webp"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Testimonials\\evelyn.jpg",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\evelyn.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Testimonials\\jason_rooy.jpg",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\jason_rooy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Testimonials\\jason_roy.webp",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\jason_roy.webp"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\images\\Testimonials\\sarah.jpg",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\sarah.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\js\\blog-slider.js",
+      "PackagePath": "staticwebassets\\js\\blog-slider.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\js\\counter-up.js",
+      "PackagePath": "staticwebassets\\js\\counter-up.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\js\\portfolio.js",
+      "PackagePath": "staticwebassets\\js\\portfolio.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\js\\scroll-spy.js",
+      "PackagePath": "staticwebassets\\js\\scroll-spy.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\js\\testi-slider.js",
+      "PackagePath": "staticwebassets\\js\\testi-slider.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.json",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.json"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\boxicons\\CSS\\animations.css",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\CSS\\animations.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\boxicons\\CSS\\boxicons.css",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\CSS\\boxicons.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\boxicons\\CSS\\boxicons.min.css",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\CSS\\boxicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\boxicons\\CSS\\transformations.css",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\CSS\\transformations.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\boxicons\\fonts\\boxicons.eot",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.eot"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\boxicons\\fonts\\boxicons.svg",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.svg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\boxicons\\fonts\\boxicons.ttf",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff2",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\glightbox\\CSS\\glightbox.css",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\CSS\\glightbox.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\glightbox\\CSS\\glightbox.min.css",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\CSS\\glightbox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\glightbox\\CSS\\plyr.css",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\CSS\\plyr.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\glightbox\\CSS\\plyr.min.css",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\CSS\\plyr.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\glightbox\\JS\\glightbox.js",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\JS\\glightbox.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\glightbox\\JS\\glightbox.min.js",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\JS\\glightbox.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\swiper\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\swiper\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\lib\\swiper\\swiper-bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\css\\all.css",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\all.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\css\\brands.css",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\brands.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\brands.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\css\\regular.css",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\regular.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\regular.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\css\\solid.css",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\solid.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\solid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\v4-shims.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\js\\all.js",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\all.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\js\\brands.js",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\brands.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\js\\brands.min.js",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\brands.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\js\\conflict-detection.js",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\conflict-detection.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\js\\conflict-detection.min.js",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\conflict-detection.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\js\\fontawesome.js",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\fontawesome.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\js\\fontawesome.min.js",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\fontawesome.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\js\\regular.js",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\regular.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\js\\regular.min.js",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\regular.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\js\\solid.js",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\solid.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\js\\solid.min.js",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\solid.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\js\\v4-shims.js",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\v4-shims.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\js\\v4-shims.min.js",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\js\\v4-shims.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\vendors\\font-awesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\jquery\\jquery-3.6.0.js",
+      "PackagePath": "staticwebassets\\vendors\\jquery\\jquery-3.6.0.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\magnific-popup\\jquery.magnific-popup.js",
+      "PackagePath": "staticwebassets\\vendors\\magnific-popup\\jquery.magnific-popup.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\magnific-popup\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\vendors\\magnific-popup\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\swiper\\swiper.css",
+      "PackagePath": "staticwebassets\\vendors\\swiper\\swiper.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\swiper\\swiper.js",
+      "PackagePath": "staticwebassets\\vendors\\swiper\\swiper.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\wwwroot\\vendors\\typed\\typed.js",
+      "PackagePath": "staticwebassets\\vendors\\typed\\typed.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TGS Genesys Teck.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TGS Genesys Teck.props",
+      "PackagePath": "build\\TGS Genesys Teck.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TGS Genesys Teck.props",
+      "PackagePath": "buildMultiTargeting\\TGS Genesys Teck.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TGS Genesys Teck.props",
+      "PackagePath": "buildTransitive\\TGS Genesys Teck.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
