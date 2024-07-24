@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\TGS Genesys Teck.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\TGS Genesys Teck.csproj",
       "projectName": "TGS Genesys Teck",
-      "projectPath": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\TGS Genesys Teck.csproj",
+      "projectPath": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\TGS Genesys Teck.csproj",
       "packagesPath": "C:\\Users\\Aluno Noite\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno Noite\\Documents\\TGS Genesys Teck\\TGS Genesys Teck\\obj\\",
+      "outputPath": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aluno Noite\\AppData\\Roaming\\NuGet\\NuGet.Config",

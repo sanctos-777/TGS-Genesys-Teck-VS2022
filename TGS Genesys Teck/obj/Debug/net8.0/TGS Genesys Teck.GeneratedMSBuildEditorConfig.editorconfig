@@ -9,35 +9,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TGS_Genesys_Teck
 build_property.RootNamespace = TGS_Genesys_Teck
-build_property.ProjectDir = C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck\
+build_property.ProjectDir = C:\Users\Aluno Noite\Desktop\TGS-Genesys-Teck-VS2022\TGS Genesys Teck\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Aluno Noite\Documents\TGS Genesys Teck\TGS Genesys Teck
+build_property.MSBuildProjectDirectory = C:\Users\Aluno Noite\Desktop\TGS-Genesys-Teck-VS2022\TGS Genesys Teck
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Aluno Noite/Documents/TGS Genesys Teck/TGS Genesys Teck/Views/Home/Index.cshtml]
+[C:/Users/Aluno Noite/Desktop/TGS-Genesys-Teck-VS2022/TGS Genesys Teck/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/TGS Genesys Teck/TGS Genesys Teck/Views/Shared/Error.cshtml]
+[C:/Users/Aluno Noite/Desktop/TGS-Genesys-Teck-VS2022/TGS Genesys Teck/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/TGS Genesys Teck/TGS Genesys Teck/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Aluno Noite/Desktop/TGS-Genesys-Teck-VS2022/TGS Genesys Teck/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/TGS Genesys Teck/TGS Genesys Teck/Views/_ViewImports.cshtml]
+[C:/Users/Aluno Noite/Desktop/TGS-Genesys-Teck-VS2022/TGS Genesys Teck/Views/Usuario/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDYWRhc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aluno Noite/Desktop/TGS-Genesys-Teck-VS2022/TGS Genesys Teck/Views/Usuario/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aluno Noite/Desktop/TGS-Genesys-Teck-VS2022/TGS Genesys Teck/Views/Usuario/Usuarioindex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xVc3VhcmlvaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aluno Noite/Desktop/TGS-Genesys-Teck-VS2022/TGS Genesys Teck/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/TGS Genesys Teck/TGS Genesys Teck/Views/_ViewStart.cshtml]
+[C:/Users/Aluno Noite/Desktop/TGS-Genesys-Teck-VS2022/TGS Genesys Teck/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/TGS Genesys Teck/TGS Genesys Teck/Views/Shared/_Layout.cshtml]
+[C:/Users/Aluno Noite/Desktop/TGS-Genesys-Teck-VS2022/TGS Genesys Teck/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-yfutsaru9w
