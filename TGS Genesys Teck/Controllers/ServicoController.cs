@@ -4,25 +4,21 @@ using TGS_Genesys_Teck.Models;
 
 namespace TGS_Genesys_Teck.Controllers
 {
-    public class UsuarioController : Controller
+    public class ServicoController : Controller
     {
-        private readonly ILogger<UsuarioController> _logger;
+        private readonly ILogger<ServicoController> _logger;
 
-        public UsuarioController(ILogger<UsuarioController> logger)
+        public ServicoController(ILogger<ServicoController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Login()
-        {
-            return View();
-        }
-        public IActionResult Cadastro()
+        public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Index()
+        public IActionResult Privacy()
         {
             return View();
         }

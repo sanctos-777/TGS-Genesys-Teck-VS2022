@@ -4,28 +4,30 @@ using TGS_Genesys_Teck.Models;
 
 namespace TGS_Genesys_Teck.Controllers
 {
-    public class UsuarioController : Controller
+    public class AgendamentoController : Controller
     {
-        private readonly ILogger<UsuarioController> _logger;
+        private readonly ILogger<AgendamentoController> _logger;
 
-        public UsuarioController(ILogger<UsuarioController> logger)
+        public AgendamentoController(ILogger<AgendamentoController> logger)
         {
             _logger = logger;
-        }
-
-        public IActionResult Login()
-        {
-            return View();
-        }
-        public IActionResult Cadastro()
-        {
-            return View();
         }
 
         public IActionResult Index()
         {
             return View();
         }
+
+        public IActionResult Cliente()
+        {
+            return View();
+        }
+
+        public IActionResult Cadastro()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

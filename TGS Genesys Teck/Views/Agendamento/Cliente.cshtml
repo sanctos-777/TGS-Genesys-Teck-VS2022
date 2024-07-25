@@ -1,37 +1,8 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout_Gerenciamento.cshtml";
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
-    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="~/lib/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="~/css/index.css">
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <style>
-        /* Estilização básica para o select */
-        .custom-select {
-            display: inline-block;
-            background-color: #f1f1f1;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-            /* Estilização das opções */
-            .custom-select option {
-                padding: 10px;
-            }
-    </style>
-</head>
 <body>
 
 
@@ -39,7 +10,7 @@
         <div class="container page-maneger">
 
             <div class="add-user-button">
-                <h1 class="section-title cliente-title-maneger" style="color:#154666">Gereciamento de usuário </h1>
+                <h1 class="section-title cliente-title-maneger" style="color:#154666">Agendamento Admin </h1>
                 <br />
             </div>
 
@@ -47,13 +18,15 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="input-group mb-4">
-                            <input id="filtro" type="text" class="form-control" placeholder="Pesquisar Produtos..." aria-label="Filtrar" aria-describedby="basic-addon2">
+                            <input id="filtro" type="text" class="form-control" placeholder="Pesquisar Produtos..."
+                                aria-label="Filtrar" aria-describedby="basic-addon2">
                         </div>
                     </div>
                     <div class="col-md-6 text-md-end">
                         <!-- Alteração para "text-md-end" para alinhar à direita apenas em telas médias e maiores -->
-                        <button class="btn btn-success btn-lg" onclick="" data-bs-toggle="modal" data-bs-target="#InserirUsuario">
-                            <i class="fa fa-plus"></i> Adicionar Cliente
+                        <button class="btn btn-success btn-lg" onclick="" data-bs-toggle="modal"
+                            data-bs-target="#InserirAgendamento">
+                            <i class="fa fa-plus"></i> Adicionar Agendamento
                         </button>
                     </div>
                 </div>
@@ -68,37 +41,45 @@
                         <tr>
                             <th>#</th>
                             <th>Nome</th>
-                            <th>Senha</th>
                             <th>Email</th>
                             <th>Telefone</th>
-                            <th>Tipo de Usuário</th>
-                            <th class="editar">Editar</th>
-                            <th class="excluir">Excluir</th>
+                            <th>Agendamento para a Data</th>
+                            <th>Horario</th>
+                            <th>Serviço</th>
+                            <th>Valor</th>
+                            <th>Confirmação</th>
+                            <th style="color: #154666;text-align: center;">Editar</th>
+                            <th style="color: #002333;text-align: center;">Excluir</th>
                         </tr>
                     </thead>
                     <tbody>
 
-                        <tr id="Id">
-                            <td>Id</td>
+                        <tr>
+                            <td>id</td>
                             <td>Nome</td>
-                            <td>Senha</td>
                             <td>Email</td>
                             <td>Telefone</td>
-                            <td>
+                            <td>AgendarData</td>
+                            <td>Horario</td>
+                            <td>Serviço</td>
+                            <td>Valor</td>
+                            <td>Confirmacao</td>
 
-                                <span>Administrador</span>
-
-                            </td>
                             <td class="text-center">
-                                <button class="btn btn-default" onclick="" data-bs-toggle="modal" data-bs-target="#EditarUsuario">
+                                <button class="btn btn-default"
+                                    onclick="definirEdt('')"
+                                    data-bs-toggle="modal" data-bs-target="#EditarUsuario">
                                     <i class="fa fa-edit"></i>
                                 </button>
                             </td>
                             <td class="text-center">
-                                <button class="btn btn-default" onclick="" data-bs-toggle="modal" data-bs-target="#ExcluirUsuario">
+                                <button class="btn btn-default"
+                                    onclick="definirExc('')"
+                                    data-bs-toggle="modal" data-bs-target="#ExcluirUsuario">
                                     <i class="fa fa-trash text-danger"></i>
                                 </button>
                             </td>
+
                         </tr>
 
                     </tbody>
@@ -106,7 +87,6 @@
             </div>
 
         </div>
-
         <div class="modal fade" id="EditarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -119,7 +99,47 @@
                             <p style="color:red">Campos com * vermelho são obrigatórios</p>
                             <div class="mb-3 row">
                                 <div class="col-md-6">
-                                    <input id="EditNome" type="text" class="form-control" placeholder="Digite o nome do cliente">
+                                    <label>Nome</label>
+                                    <input id="EditNome" type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label>Email</label>
+                                    <input id="EditNome" type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label>Telefone</label>
+                                    <input id="EditNome" type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label>Agendamento</label>
+                                    <input id="EditNome" type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label>Horario</label>
+                                    <input id="EditNome" type="text" class="form-control">
                                 </div>
                                 <div class="col-md-6">
                                     <label style="color:red">*</label>
@@ -128,29 +148,8 @@
 
                             <div class="mb-3 row">
                                 <div class="col-md-6">
-                                    <input id="EditSenha" type="text" class="form-control" placeholder="Digite o a senha">
-                                </div>
-                                <div class="col-md-6">
-                                    <label style="color:red">*</label>
-                                </div>
-                            </div>
-
-                            <div class="mb-3 row">
-                                <div class="col-md-7">
-                                    <input id="EditEmail" type="email" class="form-control" placeholder="Digite o email">
-                                </div>
-                                <div class="col-md-5">
-                                    <label style="color:red">*</label>
-                                </div>
-                            </div>
-
-                            <div class="mb-4 row">
-                                <div class="col-md-6">
-                                    <select id="frutas" class="custom-select">
-                                        <option value="" disabled selected hidden>Selecione tipo de usuario</option>
-                                        <option value="maca">Cliente</option>
-                                        <option value="banana">Administrador</option>
-                                    </select>
+                                    <label>Serviço</label>
+                                    <input id="EditNome" type="text" class="form-control">
                                 </div>
                                 <div class="col-md-6">
                                     <label style="color:red">*</label>
@@ -159,12 +158,24 @@
 
                             <div class="mb-3 row">
                                 <div class="col-md-6">
-                                    <input id="EditTel" type="text" class="form-control" placeholder="Digite o telefone">
+                                    <label>Valor</label>
+                                    <input id="EditNome" type="text" class="form-control">
                                 </div>
                                 <div class="col-md-6">
                                     <label style="color:red">*</label>
                                 </div>
                             </div>
+
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label>Confirmação</label>
+                                    <input id="EditNome" type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+                          
                             <input type="hidden" id="IdEdt" value="" />
 
                         </form>
@@ -177,7 +188,8 @@
             </div>
         </div>
 
-        <div class="modal fade" id="ExcluirUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="ExcluirUsuario" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -185,25 +197,97 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                        
                         <form>
-                            <div class="mb-3">
-                                <label for="nome">Nome</label>
-                                <input type="text" id="ExcNome" class="form-control" placeholder="Digite seu nome..." readonly>
-
+                            
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label>Nome</label>
+                                    <input id="EditNome" type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="email">Email</label>
-                                <input type="email" id="ExcEmail" class="form-control" placeholder="Digite seu email..." readonly>
-
+                            
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label>Email</label>
+                                    <input id="EditNome" type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="telefone">Telefone</label>
-                                <input type="text" id="ExcTel" class="form-control" placeholder="Digite seu telefone..." readonly>
 
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label>Telefone</label>
+                                    <input id="EditNome" type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
                             </div>
-                            <input type="hidden" id="IdExc" class="form-control" placeholder="Digite seu nome..." readonly>
+
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label>Agendamento</label>
+                                    <input id="EditNome" type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label>Horario</label>
+                                    <input id="EditNome" type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label>Serviço</label>
+                                    <input id="EditNome" type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label>Valor</label>
+                                    <input id="EditNome" type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label>Confirmação</label>
+                                    <input id="EditNome" type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
 
                         </form>
+
+                        </div>
+
+                            <input type="hidden" id="IdExc" class="form-control" placeholder="Digite seu nome..."
+                                readonly>
+                       
+
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                             <button type="button" onclick="ExcluirUsuario()" class="btn btn-primary">Excluir</button>
@@ -214,75 +298,87 @@
                 </div>
             </div>
         </div>
-
-        <div class="modal fade" id="InserirUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="InserirAgendamento" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-
                     <div class="modal-header">
-                        <h2 class="modal-title" id="exampleModalLabel">Adicionar Cliente</h2>
+                        <h1 class="modal-title" id="exampleModalLabel">Adicionar Agendamento de Manutenção</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-
                     <div class="modal-body">
                         <form>
-                            <p style="color:red">Campos com * vermelho são obrigatórios</p>
-                            <div class="mb-3 row">
-                                <div class="col-md-6">
-                                    <input id="Nome" type="text" class="form-control" placeholder="Digite o nome do cliente">
-                                </div>
-                                <div class="col-md-6">
-                                    <label style="color:red">*</label>
-                                </div>
+                            <div class="mb-3 d-flex align-items-center">
+                                <input type="hidden" id="TxtIdM" class="form-check-input" value="10:00"
+                                    style="margin-right: 10px;" disabled>
                             </div>
 
-                            <div class="mb-3 row">
-                                <div class="col-md-6">
-                                    <input id="Senha" type="text" class="form-control" placeholder="Digite o a senha">
-                                </div>
-                                <div class="col-md-6">
-                                    <label style="color:red">*</label>
-                                </div>
+                            <div class="mb-3 d-flex align-items-center">
+                                <input id="data_agdtM" type="date" class="form-control" style="width: 300px;"
+                                    placeholder="Escolha a data do agendamento"
+                                    oninput="consultarAgendamentoM();consultarAgendamentoManutencaoM()">
+                            </div>
+                            <div class="mb-3 d-flex align-items-center">
+                                <select id="frutas" class="custom-select">
+                                    <option value="" disabled selected hidden>Selecione o tipo de Serviço</option>
+                                    <option value="maca">Montagem de computador</option>
+                                    <option value="banana">Configuração de software </option>
+                                    <option value="maca">Formatação</option>
+                                    <option value="banana">Venda de hardware sob encomenda</option>
+                                    <option value="maca">Assistência remota</option>
+                                    <option value="banana">Atendimento à domicilio</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="mb-3 d-flex align-items-center">
+                                <input type="options" id="chk08M" class="form-check-input" value="08:00"
+                                    style="margin-right: 10px;" data-group="horario" >
+                                <label class="form-check-label" for="chk08">Atendimento das 8:00</label>
+                                <span id="Span08M" style="color:red;"></span>
                             </div>
 
-                            <div class="mb-3 row">
-                                <div class="col-md-7">
-                                    <input id="Email" type="email" class="form-control" placeholder="Digite o email">
-                                </div>
-                                <div class="col-md-5">
-                                    <label style="color:red">*</label>
-                                </div>
+                            <div class="mb-3 d-flex align-items-center">
+                                <input type="options" id="chk10M" class="form-check-input" value="10:00"
+                                    style="margin-right: 10px;" data-group="horario" >
+                                <label class="form-check-label" for="chk10">Atendimento das 10:00</label>
+                                <span id="Span10M" style="color:red;"></span>
                             </div>
 
-                            <div class="mb-4 row">
-                                <div class="col-md-6">
-                                    <select id="frutas" class="custom-select">
-                                        <option value="" disabled selected hidden>Selecione tipo de usuario</option>
-                                        <option value="maca">Cliente</option>
-                                        <option value="banana">Administrador</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6">
-                                    <label style="color:red">*</label>
-                                </div>
+                            <div class="mb-3 d-flex align-items-center">
+                                <input type="options" id="chk13M" class="form-check-input" value="13:00"
+                                    style="margin-right: 10px;" data-group="horario" >
+                                <label class="form-check-label" for="chk13">Atendimento das 13:00</label>
+                                <span id="Span13M" style="color:red;"></span>
                             </div>
 
-                            <div class="mb-3 row">
-                                <div class="col-md-6">
-                                    <input id="Telefone" type="text" class="form-control" placeholder="Digite o telefone">
-                                </div>
-                                <div class="col-md-6">
-                                    <label style="color:red">*</label>
-                                </div>
+                            <div class="mb-3 d-flex align-items-center">
+                                <input type="options" id="chk15M" class="form-check-input" value="15:00"
+                                    style="margin-right: 10px;" data-group="horario" >
+                                <label class="form-check-label" for="chk15">Atendimento das 15:00</label>
+                                <span id="Span15M" style="color:red;"></span>
                             </div>
 
-                            <input type="hidden" id="IdEdt" value="" />
+                            <div class="mb-3 d-flex align-items-center">
+                                <input type="options" id="chk17M" class="form-check-input" value="17:00"
+                                    style="margin-right: 10px;" data-group="horario" >
+                                <label class="form-check-label" for="chk17">Atendimento das 17:00</label>
+                                <span id="Span17M" style="color:red;"></span>
+                            </div>
 
+                            <div class="mb-3 d-flex align-items-center">
+                                <input type="options" id="chk19M" class="form-check-input" value="19:00"
+                                    style="margin-right: 10px;" data-group="horario" >
+                                <label class="form-check-label" for="chk19">Atendimento das 19:00</label>
+                                <span id="Span19M" style="color:red;"></span>
+                            </div>
+
+                            <input type="hidden" id="IdEdt" value="">
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="InserirUsuario()">Adicionar</button><!--onclick para chamar a funcao de alteração-->
+                        <button type="button" class="btn btn-primary"
+                            onclick="InserirAgendamentoManutencao()">Adicionar</button>
                     </div>
                 </div>
             </div>
@@ -298,38 +394,6 @@
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script>
 
-            function definirEdt(id, Nome, Email, Senha, TipoUsuario, Telefone) {
-
-                $('#IdEdt').val(id);
-                $('#EditNome').val(Nome);
-                $('#EditSenha').val(Senha);
-                $('#EditEmail').val(Email);
-                $('#EditTel').val(Telefone);
-
-
-                var senhaValue = "";
-                if (Senha) {
-                    $('#EditSenha').val(Senha);
-                    senhaValue = Senha;
-                }
-
-
-                if ($('#DropTipoUsuarioEdit').length > 0) {
-                    $('#DropTipoUsuarioEdit option').filter(function () {
-                        return $(this).val() === TipoUsuario;
-                    }).prop('selected', true);
-                    $('#DropTipoUsuarioEdit').trigger('chosen:updated');
-                } else {
-                    console.error("DropDownList não encontrado.");
-                }
-            }
-
-            function definirExc(id, Nome, Email, Telefone) {
-                $('#IdExc').val(id);
-                $('#ExcNome').val(Nome);
-                $('#ExcEmail').val(Email);
-                $('#ExcTel').val(Telefone)
-            }
 
             function InserirUsuario() {
 
@@ -508,11 +572,11 @@
     <section class="container text-center">
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <div>
-                <button type="button" id="send-button2" class="nav-link active btn btn-danger btn-block" style="flex: 1; margin-left: 5px;" onclick="window.location.href = '/Home/usuarioindex';">
+                <button type="button" id="send-button2" class="nav-link active btn btn-danger btn-block"
+                    style="flex: 1; margin-left: 5px;" onclick="window.location.href = '/Home/index';">
                     Voltar
                 </button>
             </div>
         </div>
     </section>
 </body>
-</html>

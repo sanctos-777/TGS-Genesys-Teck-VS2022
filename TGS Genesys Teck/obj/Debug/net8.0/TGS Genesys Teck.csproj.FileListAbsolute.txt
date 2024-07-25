@@ -59,3 +59,4 @@ C:\Users\Aluno Noite\Desktop\TGS-Genesys-Teck-VS2022\TGS Genesys Teck\obj\Debug\
 C:\Users\Aluno Noite\Desktop\TGS-Genesys-Teck-VS2022\TGS Genesys Teck\obj\Debug\net8.0\TGS Genesys Teck.pdb
 C:\Users\Aluno Noite\Desktop\TGS-Genesys-Teck-VS2022\TGS Genesys Teck\obj\Debug\net8.0\TGS Genesys Teck.genruntimeconfig.cache
 C:\Users\Aluno Noite\Desktop\TGS-Genesys-Teck-VS2022\TGS Genesys Teck\obj\Debug\net8.0\ref\TGS Genesys Teck.dll
+C:\Users\Aluno Noite\Desktop\TGS-Genesys-Teck-VS2022\TGS Genesys Teck\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout_Gerenciamento.cshtml.rz.scp.css
