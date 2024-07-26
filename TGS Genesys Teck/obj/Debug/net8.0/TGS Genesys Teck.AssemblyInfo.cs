@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TGS Genesys Teck")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3d72656ed89fba1c681237538a060c9b8a0d2c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cca147ce862e089c71164fcfc024c47aa4e67254")]
 [assembly: System.Reflection.AssemblyProductAttribute("TGS Genesys Teck")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TGS Genesys Teck")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
