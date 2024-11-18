@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using TGS_Genesys_Teck.ORM;
 using TGS_Genesys_Teck.Repositorio;
+using TGS_Genesys_Teck.Repositorios;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,10 +12,11 @@ builder.Services.AddDbContext<TgsGenesysTeckContext>(options =>
 // Registrar o repositório (UsuarioRepositorio)
 builder.Services.AddScoped<UsuarioRepositorio>();  // Ou AddTransient ou AddSingleton dependendo do caso
 // Registrar o repositório (UsuarioRepositorio)
-//builder.Services.AddScoped<ServicoRepositorio>();  // Ou AddTransient ou AddSingleton dependendo do caso
-         
+builder.Services.AddScoped<ServicoRepositorio>();  // Ou AddTransient ou AddSingleton dependendo do caso
+
 // Registrar outros serviços, como controllers com views
 builder.Services.AddControllersWithViews();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

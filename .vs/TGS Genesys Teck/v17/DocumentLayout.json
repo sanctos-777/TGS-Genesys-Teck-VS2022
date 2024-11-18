@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|c:\\users\\aluno noite\\desktop\\tgs-genesys-teck-vs2022\\tgs genesys teck\\controllers\\servicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|solutionrelative:tgs genesys teck\\controllers\\servicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|c:\\users\\aluno noite\\desktop\\tgs-genesys-teck-vs2022\\tgs genesys teck\\repositorio\\servicorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|solutionrelative:tgs genesys teck\\repositorio\\servicorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|c:\\users\\aluno noite\\desktop\\tgs-genesys-teck-vs2022\\tgs genesys teck\\views\\servico\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|solutionrelative:tgs genesys teck\\views\\servico\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|c:\\users\\aluno noite\\desktop\\tgs-genesys-teck-vs2022\\tgs genesys teck\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|solutionrelative:tgs genesys teck\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|c:\\users\\aluno noite\\desktop\\tgs-genesys-teck-vs2022\\tgs genesys teck\\controllers\\usuariocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|solutionrelative:tgs genesys teck\\controllers\\usuariocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|c:\\users\\aluno noite\\desktop\\tgs-genesys-teck-vs2022\\tgs genesys teck\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|solutionrelative:tgs genesys teck\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +38,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Views\\Usuario\\Index.cshtml",
               "RelativeDocumentMoniker": "TGS Genesys Teck\\Views\\Usuario\\Index.cshtml",
               "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Views\\Usuario\\Index.cshtml",
               "RelativeToolTip": "TGS Genesys Teck\\Views\\Usuario\\Index.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAYwGAAAAAAAAAA",
+              "ViewState": "AQIAAKYAAAAAAAAAAAAAALEAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-12T18:45:32.817Z",
+              "WhenOpened": "2024-11-18T18:04:55.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Views\\Servico\\Index.cshtml",
+              "RelativeDocumentMoniker": "TGS Genesys Teck\\Views\\Servico\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Views\\Servico\\Index.cshtml",
+              "RelativeToolTip": "TGS Genesys Teck\\Views\\Servico\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-18T18:01:22.459Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UsuarioController .cs",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Controllers\\UsuarioController .cs",
-              "RelativeDocumentMoniker": "TGS Genesys Teck\\Controllers\\UsuarioController .cs",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Controllers\\UsuarioController .cs",
-              "RelativeToolTip": "TGS Genesys Teck\\Controllers\\UsuarioController .cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwC4AAABvAAAA",
+              "Title": "ServicoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Repositorio\\ServicoRepositorio.cs",
+              "RelativeDocumentMoniker": "TGS Genesys Teck\\Repositorio\\ServicoRepositorio.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Repositorio\\ServicoRepositorio.cs",
+              "RelativeToolTip": "TGS Genesys Teck\\Repositorio\\ServicoRepositorio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T18:01:04.149Z",
+              "WhenOpened": "2024-11-18T17:59:56.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Program.cs",
+              "RelativeDocumentMoniker": "TGS Genesys Teck\\Program.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Program.cs",
+              "RelativeToolTip": "TGS Genesys Teck\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T17:59:13.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServicoController.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Controllers\\ServicoController.cs",
+              "RelativeDocumentMoniker": "TGS Genesys Teck\\Controllers\\ServicoController.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Controllers\\ServicoController.cs",
+              "RelativeToolTip": "TGS Genesys Teck\\Controllers\\ServicoController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwBoAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T17:57:47.399Z",
               "EditorCaption": ""
             }
           ]

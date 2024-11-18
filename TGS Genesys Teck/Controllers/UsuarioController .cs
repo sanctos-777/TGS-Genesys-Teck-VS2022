@@ -1,11 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
+using TGS_Genesys_Teck.Repositorios;
 using System.Diagnostics;
 using TGS_Genesys_Teck.Models;
-using TGS_Genesys_Teck.Repositorio;
 
-namespace SiteAgendamento.Controllers
+namespace TGS_Genesys_Teck.Controllers
 {
     public class UsuarioController : Controller
     {
@@ -44,7 +43,7 @@ namespace SiteAgendamento.Controllers
             try
             {
                 // Chama o método do repositório que realiza a inserção no banco de dados
-                var resultado = _usuarioRepositorio.InserirUsuario(Nome, Email, Telefone, Senha, TipoUsuario); 
+                var resultado = _usuarioRepositorio.InserirUsuario(Nome, Email, Telefone, Senha, TipoUsuario);
 
                 // Verifica o resultado da inserção
                 if (resultado)
@@ -116,4 +115,3 @@ namespace SiteAgendamento.Controllers
         }
     }
 }
-

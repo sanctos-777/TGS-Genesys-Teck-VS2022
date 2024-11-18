@@ -1,28 +1,34 @@
-﻿using TGS_Genesys_Teck.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using TGS_Genesys_Teck.Models;
 using TGS_Genesys_Teck.ORM;
+using TGS_Genesys_Teck.Repositorios;
 
-namespace TGS_Genesys_Teck.Repositorio
+namespace TGS_Genesys_Teck.Repositorios
 {
     public class UsuarioRepositorio
     {
+        // Substituindo TGS_Genesys_Teck por TGS_Genesys_TeckContext
         private TgsGenesysTeckContext _context;
+
         public UsuarioRepositorio(TgsGenesysTeckContext context)
         {
             _context = context;
         }
+
         public bool InserirUsuario(string nome, string email, string telefone, string senha, int tipoUsuario)
         {
             try
             {
-                TbUsuario usuario = new TbUsuario();
-                usuario.Nome = nome;
-                usuario.Email = email;
-                usuario.Telefone = telefone;
-                usuario.Senha = senha;
-                usuario.TipoUsuario = tipoUsuario;
+                TbUsuario usuario = new TbUsuario
+                {
+                    Nome = nome,
+                    Email = email,
+                    Telefone = telefone,
+                    Senha = senha,
+                    TipoUsuario = tipoUsuario
+                };
 
-                _context.TbUsuarios.Add(usuario);  // Supondo que _context.TbUsuarios seja o DbSet para a entidade de usuários
+                _context.TbUsuarios.Add(usuario);  // TbUsuarios é o DbSet para a entidade de usuários
                 _context.SaveChanges();
 
                 return true;  // Retorna true para indicar sucesso
@@ -49,7 +55,7 @@ namespace TGS_Genesys_Teck.Repositorio
                     Email = item.Email,
                     Telefone = item.Telefone,
                     Senha = item.Senha,
-                    TipoUsuario = item.TipoUsuario,
+                    TipoUsuario = item.TipoUsuario
                 };
 
                 listFun.Add(usuarios);
@@ -101,8 +107,7 @@ namespace TGS_Genesys_Teck.Repositorio
                 if (usuario == null)
                 {
                     throw new KeyNotFoundException("Usuário não encontrado.");
-                }   
-
+                }
 
                 // Remove o usuário do banco de dados
                 _context.TbUsuarios.Remove(usuario);
@@ -121,8 +126,5 @@ namespace TGS_Genesys_Teck.Repositorio
                 throw new Exception($"Erro ao excluir o usuário: {ex.Message}");
             }
         }
-
-
     }
-
 }
