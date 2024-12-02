@@ -21,6 +21,8 @@ public partial class TgsGenesysTeckContext : DbContext
 
     public virtual DbSet<TbUsuario> TbUsuarios { get; set; }
 
+    public virtual DbSet<ViewAgendamento> ViewAgendamentos { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Server=LAB205_23\\SQLEXPRESS;Database=TGS_Genesys_Teck;User Id=adminTarde;Password=admin;TrustServerCertificate=true");
@@ -81,6 +83,29 @@ public partial class TgsGenesysTeckContext : DbContext
             entity.Property(e => e.Telefone)
                 .HasMaxLength(100)
                 .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<ViewAgendamento>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToView("View_Agendamento");
+
+            entity.Property(e => e.DtHoraAgendamento).HasColumnType("datetime");
+            entity.Property(e => e.Email)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.IdAtendimento).HasColumnName("id_Atendimento");
+            entity.Property(e => e.Nome)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.Telefone)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.TipoServico)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.Valor).HasColumnType("decimal(18, 0)");
         });
 
         OnModelCreatingPartial(modelBuilder);

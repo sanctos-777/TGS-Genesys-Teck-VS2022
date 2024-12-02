@@ -79,7 +79,7 @@
 
                         <!-- Submit button -->
                         <div style="display: flex; justify-content: space-between;">
-                            <button type="button" id="send-button1" class="nav-link active btn btn-primary btn-block" style="flex: 1; margin-left: 5px;" onclick="ConsultaLogin ()">Entrar</button>
+                            <button type="button" id="send-button1" class="nav-link active btn btn-primary btn-block" style="flex: 1; margin-left: 5px;" onclick="ConsultaLogin()">Entrar</button>
                             <button type="button" id="send-button2" class="nav-link active btn btn-primary btn-block" style="flex: 1; margin-left: 5px;" onclick="window.location.href = '/';">Voltar</button>
                         </div>
 
@@ -117,7 +117,7 @@
 
         $.ajax({
             type: "POST",
-            url: "/Usuario/ConsultarUsuario",
+            url: "/Usuario/VerificarUsuario",
             data: { Email: email, Senha: senha },
             dataType: "json",
             success: function (result) {
