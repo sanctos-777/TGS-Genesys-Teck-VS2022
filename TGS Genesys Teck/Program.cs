@@ -14,7 +14,7 @@ builder.Services.AddScoped<UsuarioRepositorio>();  // Ou AddTransient ou AddSing
 // Registrar o repositório (ServicoRepositorio)
 builder.Services.AddScoped<ServicoRepositorio>();  // Ou AddTransient ou AddSingleton dependendo do caso
 // Registrar o repositório (AgendamentoRepositorio)
-builder.Services.AddScoped<AtendimentoRepositorio>();  // Ou AddTransient ou AddSingleton dependendo do caso
+builder.Services.AddScoped<AgendamentoRepositorio>();  // Ou AddTransient ou AddSingleton dependendo do caso
 
 // Adicionar suporte a sessões
 builder.Services.AddSession(options =>

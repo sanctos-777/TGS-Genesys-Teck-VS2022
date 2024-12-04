@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public DateTime DtHoraAgendamento { get; set; }
-        public DateOnly DataAtendimento { get; set; }
+        public DateOnly DataAgendamento { get; set; }
         public TimeOnly Horario { get; set; }
 
         // Propriedades adicionais para o nome e email do usuário
@@ -20,7 +20,7 @@
 
         // Propriedades de formatação
         public string DtHoraAgendamentoFormatada => DtHoraAgendamento.ToString("dd/MM/yyyy HH:mm");
-        public string DataAtendimentoFormatada => DataAtendimento.ToString("dd/MM/yyyy");
+        public string DataAgendamentoFormatada => DataAgendamento.ToString("dd/MM/yyyy");
         public string HorarioFormatado => Horario.ToString("HH:mm");
 
         // Propriedades para navegação

@@ -8,12 +8,12 @@ namespace TGS_Genesys_Teck.Controllers
 {
     public class AgendamentoController : Controller
     {
-        private readonly AtendimentoRepositorio _atendimentoRepositorio;
+        private readonly AgendamentoRepositorio _agendamentoRepositorio;
 
         // Construtor para injetar o repositório
-        public AgendamentoController(AtendimentoRepositorio agendamentoRepositorio)
+        public AgendamentoController(AgendamentoRepositorio agendamentoRepositorio)
         {
-            _atendimentoRepositorio = agendamentoRepositorio;
+            _agendamentoRepositorio = agendamentoRepositorio;
         }
 
         public IActionResult Index()
@@ -31,8 +31,26 @@ namespace TGS_Genesys_Teck.Controllers
 
             // Passar a lista para a View usando ViewBag
             ViewBag.lstTipoServico = new SelectList(tipoServico, "Value", "Text");
-            var atendimentos = _atendimentoRepositorio.ListarAtendimentos();
-            return View(atendimentos);
+
+
+            // Chama o método ListarNomesAgendamentos para obter a lista de usuários
+            var usuarios = _agendamentoRepositorio.ListarNomesAgendamentos();
+
+            if (usuarios != null && usuarios.Any())
+            {
+                // Cria a lista de SelectListItem
+                var selectList = usuarios.Select(u => new SelectListItem
+                {
+                    Value = u.Id.ToString(),  // O valor do item será o ID do usuário
+                    Text = u.Nome             // O texto exibido será o nome do usuário
+                }).ToList();
+
+                // Passa a lista para o ViewBag para ser utilizada na view
+                ViewBag.Usuarios = selectList;
+            }
+
+            var agendamentos = _agendamentoRepositorio.ListarAgendamentos();
+            return View(agendamentos);
         }
 
         public IActionResult Cliente()
@@ -45,21 +63,21 @@ namespace TGS_Genesys_Teck.Controllers
             return View();
         }
 
-        public IActionResult InserirAtendimento(DateTime dtHoraAgendamento, DateOnly dataAtendimento, TimeOnly horario, int fkUsuarioId, int fkServicoId)
+        public IActionResult InserirAgendamento(DateTime dtHoraAgendamento, DateOnly dataAgendamento, TimeOnly horario, int fkUsuarioId, int fkServicoId)
         {
             try
             {
                 // Chama o método do repositório que realiza a inserção no banco de dados
-                var resultado = _atendimentoRepositorio.InserirAtendimento(dtHoraAgendamento, dataAtendimento, horario, fkUsuarioId, fkServicoId);
+                var resultado = _agendamentoRepositorio.InserirAgendamento(dtHoraAgendamento, dataAgendamento, horario, fkUsuarioId, fkServicoId);
 
                 // Verifica o resultado da inserção
                 if (resultado)
                 {
-                    return Json(new { success = true, message = "Atendimento inserido com sucesso!" });
+                    return Json(new { success = true, message = "Agendamento inserido com sucesso!" });
                 }
                 else
                 {
-                    return Json(new { success = false, message = "Erro ao inserir o atendimento. Tente novamente." });
+                    return Json(new { success = false, message = "Erro ao inserir o agendamento. Tente novamente." });
                 }
             }
             catch (Exception ex)
@@ -68,20 +86,20 @@ namespace TGS_Genesys_Teck.Controllers
                 return Json(new { success = false, message = "Erro ao processar a solicitação. Detalhes: " + ex.Message });
             }
         }
-        public IActionResult AtualizarAtendimento(int id, DateTime dtHoraAgendamento, DateOnly dataAtendimento, TimeOnly horario, int fkUsuarioId, int fkServicoId)
+        public IActionResult AtualizarAgendamento(int id, DateTime dtHoraAgendamento, DateOnly dataAgendamento, TimeOnly horario, int fkUsuarioId, int fkServicoId)
         {
             try
             {
                 // Chama o repositório para atualizar o atendimento
-                var resultado = _atendimentoRepositorio.AtualizarAtendimento(id, dtHoraAgendamento, dataAtendimento, horario, fkUsuarioId, fkServicoId);
+                var resultado = _agendamentoRepositorio.AtualizarAgendamento(id, dtHoraAgendamento, dataAgendamento, horario, fkUsuarioId, fkServicoId);
 
                 if (resultado)
                 {
-                    return Json(new { success = true, message = "Atendimento atualizado com sucesso!" });
+                    return Json(new { success = true, message = "Agendamento atualizado com sucesso!" });
                 }
                 else
                 {
-                    return Json(new { success = false, message = "Erro ao atualizar o atendimento. Verifique se o atendimento existe." });
+                    return Json(new { success = false, message = "Erro ao atualizar o agendamento. Verifique se o agendamento existe." });
                 }
             }
             catch (Exception ex)
@@ -89,20 +107,20 @@ namespace TGS_Genesys_Teck.Controllers
                 return Json(new { success = false, message = "Erro ao processar a solicitação. Detalhes: " + ex.Message });
             }
         }
-        public IActionResult ExcluirAtendimento(int id)
+        public IActionResult ExcluirAgendamento(int id)
         {
             try
             {
                 // Chama o repositório para excluir o atendimento
-                var resultado = _atendimentoRepositorio.ExcluirAtendimento(id);
+                var resultado = _agendamentoRepositorio.ExcluirAgendamento(id);
 
                 if (resultado)
                 {
-                    return Json(new { success = true, message = "Atendimento excluído com sucesso!" });
+                    return Json(new { success = true, message = "Agendamento excluído com sucesso!" });
                 }
                 else
                 {
-                    return Json(new { success = false, message = "Não foi possível excluir o atendimento. Verifique se ele está vinculado a outros registros no sistema." });
+                    return Json(new { success = false, message = "Não foi possível excluir o agendamento. Verifique se ele está vinculado a outros registros no sistema." });
                 }
             }
             catch (Exception ex)
@@ -121,7 +139,7 @@ namespace TGS_Genesys_Teck.Controllers
         public IActionResult ConsultarAgendamento(string data)
         {
 
-            var agendamento = _atendimentoRepositorio.ConsultarAgendamento(data);
+            var agendamento = _agendamentoRepositorio.ConsultarAgendamento(data);
 
             if (agendamento != null)
             {

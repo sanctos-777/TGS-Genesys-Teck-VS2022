@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace TGS_Genesys_Teck.ORM;
 
-public partial class TbAtendimento
+public partial class TbAgendamento
 {
-    public int IdAtendimento { get; set; }
+    public int IdAgendamento { get; set; }
 
     public DateTime DtHoraAgendamento { get; set; }
 
-    public DateOnly DataAtendimento { get; set; }
+    public DateOnly DataAgendamento { get; set; }
 
     public TimeOnly Horario { get; set; }
 

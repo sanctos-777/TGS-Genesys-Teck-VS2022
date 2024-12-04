@@ -59,34 +59,43 @@
                     <div style="max-height: 300px; overflow-y: auto; overflow-x: hidden;">
                         <table id="TbClientesBody" class="table" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                             <tbody>
-                                @foreach (var usuario in Model)
+                                @if (Model != null && Model.Any())
+                                {
+                                    @foreach (var usuario in Model)
+                                    {
+                                        <tr>
+                                            <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px;width: 50px">@usuario.Id</td>
+                                            <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px;width: 190px">@usuario.Nome</td>
+                                            <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px; width: 230px">@usuario.Senha</td>
+                                            <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px; width: 312px">@usuario.Email</td>
+                                            <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px; width: 160px">@usuario.Telefone</td>
+
+                                            @if (usuario.TipoUsuario == 1)
+                                            {
+                                                <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px; width: 170px">Administrador</td>
+                                            }
+                                            else
+                                            {
+                                                <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px; width: 170px">Cliente</td>
+                                            }
+
+                                            <td class="text-center" style="border: 1px solid #ddd;">
+                                                <button class="btn btn-default" onclick="definirEdt('@usuario.Id', '@usuario.Nome','@usuario.Email', '@usuario.Senha', '@usuario.TipoUsuario', '@usuario.Telefone')" data-bs-toggle="modal" data-bs-target="#EditarUsuario" style="color: #EAE7DC;">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                            </td>
+                                            <td class="text-center" style="border: 1px solid #ddd;">
+                                                <button class="btn btn-default" onclick="definirExc('@usuario.Id', '@usuario.Nome', '@usuario.Email', '@usuario.Telefone')" data-bs-toggle="modal" data-bs-target="#ExcluirUsuario" style="color: #EAE7DC;">
+                                                    <i class="fa fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                                else
                                 {
                                     <tr>
-                                        <td style="color: #154666; border: 1px solid #ddd; padding: 8px;width: 50px">@usuario.Id</td>
-                                        <td style="color: #154666; border: 1px solid #ddd; padding: 8px;width: 190px">@usuario.Nome</td>
-                                        <td style="color: #154666; border: 1px solid #ddd; padding: 8px; width: 230px">@usuario.Senha</td>
-                                        <td style="color: #154666; border: 1px solid #ddd; padding: 8px; width: 312px">@usuario.Email</td>
-                                        <td style="color: #154666; border: 1px solid #ddd; padding: 8px; width: 160px">@usuario.Telefone</td>
-
-                                        @if (usuario.TipoUsuario == 0)
-                                        {
-                                            <td style="color: #154666; border: 1px solid #ddd; padding: 8px; width: 170px">Cliente</td>
-                                        }
-                                        else
-                                        {
-                                            <td style="color: #154666; border: 1px solid #ddd; padding: 8px; width: 170px">Administrador</td>
-                                        }
-
-                                        <td class="text-center" style="border: 1px solid #ddd;">
-                                            <button class="btn btn-default" onclick="definirEdt('@usuario.Id', '@usuario.Nome','@usuario.Email', '@usuario.Senha', '@usuario.TipoUsuario', '@usuario.Telefone')" data-bs-toggle="modal" data-bs-target="#EditarUsuario" style="color: #EAE7DC;">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                        </td>
-                                        <td class="text-center" style="border: 1px solid #ddd;">
-                                            <button class="btn btn-default" onclick="definirExc('@usuario.Id', '@usuario.Nome', '@usuario.Email', '@usuario.Telefone')" data-bs-toggle="modal" data-bs-target="#ExcluirUsuario" style="color: #EAE7DC;">
-                                                <i class="fa fa-trash"></i>
-                                            </button>
-                                        </td>
+                                        <td colspan="8" style="text-align: center; color: #EAE7DC; padding: 8px;">Nenhum usuário encontrado.</td>
                                     </tr>
                                 }
                             </tbody>
@@ -279,6 +288,127 @@
 
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script>
+          
+            document.addEventListener("DOMContentLoaded", function () {
+                // Função para remover o asterisco
+                function removerAsterisco(campo) {
+                    var label = campo.closest('.row').querySelector('label');
+
+                    // Verifica se o campo foi preenchido
+                    if (campo.value.trim() !== "") {
+                        label.style.display = 'none'; // Remove o asterisco
+                    } else {
+                        label.style.display = 'inline'; // Exibe o asterisco novamente se o campo estiver vazio
+                    }
+                }
+
+                // Função para aplicar o evento de input em todos os campos
+                function adicionarEventos() {
+                    // Campos de texto
+                    var campos = ['#Nome', '#Senha', '#Email', '#Telefone', '#TipoUsuario'];
+
+                    campos.forEach(function (seletor) {
+                        var campo = document.querySelector(seletor);
+                        if (campo) {
+                            campo.addEventListener('input', function () {
+                                removerAsterisco(campo);
+                            });
+                        }
+                    });
+                }
+
+                // Inicializa os eventos
+                adicionarEventos();
+            });
+
+            document.addEventListener("DOMContentLoaded", function () {
+                // Função para verificar se o campo foi preenchido e esconder o asterisco
+                function verificarPreenchimento(campo, label) {
+                    if (campo.value.trim() !== "" || (campo.tagName === "SELECT" && campo.selectedIndex !== 0)) {
+                        label.style.display = 'none'; // Esconde o asterisco
+                    } else {
+                        label.style.display = 'inline'; // Exibe o asterisco se o campo estiver vazio
+                    }
+                }
+
+                // Função para adicionar os eventos de input e change nos campos
+                function adicionarEventos() {
+                    // Campos a serem monitorados
+                    const campos = [
+                        { id: '#EdtNome', type: 'input' },
+                        { id: '#EdtSenha', type: 'input' },
+                        { id: '#EdtEmail', type: 'input' },
+                        { id: '#EdtTel', type: 'input' },
+                        { id: '#EdtTipoUsuario', type: 'select' }
+                    ];
+
+                    campos.forEach(function (campoInfo) {
+                        const campo = document.querySelector(campoInfo.id);
+                        const label = campo.closest('.row').querySelector('label'); // Encontra o label associado ao campo
+
+                        if (campoInfo.type === 'input') {
+                            // Para campos de input, adicionar evento de 'input'
+                            campo.addEventListener('input', function () {
+                                verificarPreenchimento(campo, label);
+                            });
+                        } else if (campoInfo.type === 'select') {
+                            // Para o select, adicionar evento de 'change'
+                            campo.addEventListener('change', function () {
+                                verificarPreenchimento(campo, label);
+                            });
+                        }
+
+                        // Chama a função para inicializar o estado do campo ao carregar a página
+                        verificarPreenchimento(campo, label);
+                    });
+                }
+
+                // Inicializa os eventos
+                adicionarEventos();
+
+                // Função que preenche os campos ao editar o usuário
+                window.definirEdt = function (id, Nome, Email, Senha, TipoUsuario, Telefone) {
+                    $('#EdtId').val(id);
+                    $('#EdtNome').val(Nome);
+                    $('#EdtSenha').val(Senha);
+                    $('#EdtEmail').val(Email);
+                    $('#EdtTel').val(Telefone);
+
+                    // Preenche o campo de senha, se necessário
+                    var senhaValue = "";
+                    if (Senha) {
+                        $('#EdtSenha').val(Senha);
+                        senhaValue = Senha;
+                    }
+
+                    // Atualiza o tipo de usuário no dropdown
+                    if ($('#EdtTipoUsuario').length > 0) {
+                        $('#EdtTipoUsuario option').filter(function () {
+                            return $(this).val() === TipoUsuario;
+                        }).prop('selected', true);
+                        $('#EdtTipoUsuario').trigger('chosen:updated');
+                    } else {
+                        console.error("DropDownList não encontrado.");
+                    }
+
+                    // Verifica o preenchimento dos campos e esconde os asteriscos
+                    const campos = [
+                        { id: '#EdtNome', type: 'input' },
+                        { id: '#EdtSenha', type: 'input' },
+                        { id: '#EdtEmail', type: 'input' },
+                        { id: '#EdtTel', type: 'input' },
+                        { id: '#EdtTipoUsuario', type: 'select' }
+                    ];
+
+                    // Chama a função de verificação para cada campo ao preencher os dados
+                    campos.forEach(function (campoInfo) {
+                        const campo = document.querySelector(campoInfo.id);
+                        const label = campo.closest('.row').querySelector('label');
+                        verificarPreenchimento(campo, label);
+                    });
+                }
+            });
+            
             $(document).ready(function () {
                 // Função para atualizar o contador de registros visíveis
                 function atualizarContador() {
