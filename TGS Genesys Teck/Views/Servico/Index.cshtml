@@ -1,4 +1,8 @@
-﻿@{
+﻿@model IEnumerable<TGS_Genesys_Teck.Models.ServicoVM>
+
+
+@{
+
     Layout = "~/Views/Shared/_Layout_Gerenciamento.cshtml";
 }
 
@@ -121,13 +125,15 @@
                         <form>
                             <div class="mb-3 row">
                                 <div class="col-md-6">
-                                    @Html.DropDownList("TipoServico", ViewBag.lstTipoServico as SelectList, "Escolha o tipo de Serviço", new { @class = "form-control", @style = "width:230px; background-color: #EAE7DC; color: #333;", required = "required" })
+                                    @Html.DropDownList("TipoServico",
+                                             new SelectList(ViewBag.Servicos, "Value", "Text", null),
+                                             "Escolha o serviço",
+                                             new { @class = "form-control", @style = "width:230px; background-color: #EAE7DC; color: #333;", required = "required" })
                                 </div>
                                 <div class="col-md-6">
                                     <label style="color:#154666">*</label>
                                 </div>
                             </div>
-
                             <div class="mb-3">
                                 <label for="v_serv">Valor do Serviço:</label>
                                 <input id="Valor" type="number" class="form-control" style="width: 300px;" placeholder="R$ 1000,00" required>
@@ -151,14 +157,19 @@
                     </div>
                     <div class="modal-body">
                         <form>
+
                             <div class="mb-3 row">
                                 <div class="col-md-6">
-                                    @Html.DropDownList("EdtTipoServico", ViewBag.lstTipoServico as SelectList, "Escolha o tipo de Serviço", new { @class = "form-control", @style = "width:230px; background-color: #EAE7DC; color: #333;", required = "required" })
+                                    @Html.DropDownList("EdtTipoServico",
+                                             new SelectList(ViewBag.Servicos, "Value", "Text", null),
+                                             "Escolha o serviço",
+                                             new { @class = "form-control", @style = "width:230px; background-color: #EAE7DC; color: #333;", required = "required" })
                                 </div>
                                 <div class="col-md-6">
                                     <label style="color:#154666">*</label>
                                 </div>
                             </div>
+
                             <div class="mb-3">
                                 <label for="EdtValor">Valor do Serviço</label>
                                 <input type="text" id="EdtValor" class="form-control" placeholder="R$ 1000,00">

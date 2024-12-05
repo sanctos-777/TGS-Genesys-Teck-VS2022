@@ -19,19 +19,21 @@ namespace TGS_Genesys_Teck.Controllers
 
         public IActionResult Index()
         {
-            List<SelectListItem> tipoServico = new List<SelectListItem>
+            // Chama o método ListarNomesAgendamentos para obter a lista de usuários
+            var nomeServicos = _servicoRepositorio.ListarNomesServicos();
+
+            if (nomeServicos != null && nomeServicos.Any())
             {
-                new SelectListItem { Value = "0", Text = "Montagem de computador" },
-                new SelectListItem { Value = "1", Text = "Configuração de software" },
-                new SelectListItem { Value = "2", Text = "Formatação" },
-                new SelectListItem { Value = "3", Text = "Venda de hardware sob encomenda" },
-                new SelectListItem { Value = "4", Text = "Assistência remota" },
-                new SelectListItem { Value = "5", Text = "Atendimento à domicilio   " }
-            };
+                // Cria a lista de SelectListItem
+                var selectList = nomeServicos.Select(u => new SelectListItem
+                {
+                    Value = u.Id.ToString(),  // O valor do item será o ID do usuário
+                    Text = u.TipoServico             // O texto exibido será o nome do usuário
+                }).ToList();
 
-            // Passar a lista para a View usando ViewBag
-            ViewBag.lstTipoServico = new SelectList(tipoServico, "Value", "Text");
-
+                // Passa a lista para o ViewBag para ser utilizada na view
+                ViewBag.Servicos = selectList;
+            }
             var Servicos = _servicoRepositorio.ListarServicos();
             return View(Servicos);
         }

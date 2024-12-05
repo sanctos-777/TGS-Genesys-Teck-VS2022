@@ -14,6 +14,7 @@ namespace TGS_Genesys_Teck.Repositorio
             _context = context;
         }
         // Método para inserir um novo agendamento
+        // Método para inserir um novo agendamento
         public bool InserirAgendamento(DateTime dtHoraAgendamento, DateOnly dataAgendamento, TimeOnly horario, int fkUsuarioId, int fkServicoId)
         {
             try
@@ -28,7 +29,7 @@ namespace TGS_Genesys_Teck.Repositorio
                     IdServico = fkServicoId
                 };
 
-                // Adicionando o agendamento ao contexto
+                // Adicionando o atendimento ao contexto
                 _context.TbAgendamentos.Add(agendamento);
                 _context.SaveChanges(); // Persistindo as mudanças no banco de dados
 
@@ -40,6 +41,7 @@ namespace TGS_Genesys_Teck.Repositorio
                 return false; // Retorna false em caso de erro
             }
         }
+
 
         // Método para listar todos os agendamentos
         public List<ViewAgendamentoVM> ListarAgendamentos()

@@ -1,37 +1,41 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using TGS_Genesys_Teck.Models;
+using TGS_Genesys_Teck.ORM;
 using TGS_Genesys_Teck.Repositorio;
 
 namespace TGS_Genesys_Teck.Controllers
 {
     public class AgendamentoController : Controller
     {
+        private readonly TgsGenesysTeckContext _context;
         private readonly AgendamentoRepositorio _agendamentoRepositorio;
 
         // Construtor para injetar o repositório
-        public AgendamentoController(AgendamentoRepositorio agendamentoRepositorio)
+        public AgendamentoController(AgendamentoRepositorio agendamentoRepositorio, TgsGenesysTeckContext context)
         {
             _agendamentoRepositorio = agendamentoRepositorio;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            // Criar a lista de SelectListItems, onde o 'Value' será o 'Id' e o 'Text' será o 'TipoServico'
-            List<SelectListItem> tipoServico = new List<SelectListItem>
-              {
-                  new SelectListItem { Value = "0", Text = "Consultoria em TI" },
-                  new SelectListItem { Value = "1", Text = "Desenvolvimento de Software" },
-                   new SelectListItem { Value = "2", Text = "Suporte Técnico" },
-                  new SelectListItem { Value = "3", Text = "Treinamento Corporativo" },
-                   new SelectListItem { Value = "4", Text = "Auditoria de Sistemas" },
-                  new SelectListItem { Value = "5", Text = "Implementação de ERP" }
-              };
+            var servicos = new ServicoRepositorio(_context);
+            var nomeServicos = servicos.ListarNomesServicos();
+            if (nomeServicos != null && nomeServicos.Any())
+            {
+                // Cria a lista de SelectListItem
+                var selectList = nomeServicos.Select(u => new SelectListItem
+                {
+                    Value = u.Id.ToString(),  // O valor do item será o ID do usuário
+                    Text = u.TipoServico             // O texto exibido será o nome do usuário
+                }).ToList();
 
-            // Passar a lista para a View usando ViewBag
-            ViewBag.lstTipoServico = new SelectList(tipoServico, "Value", "Text");
-
+                // Passa a lista para o ViewBag para ser utilizada na view
+                ViewBag.lstTipoServico = selectList;
+            }
 
             // Chama o método ListarNomesAgendamentos para obter a lista de usuários
             var usuarios = _agendamentoRepositorio.ListarNomesAgendamentos();
@@ -73,7 +77,7 @@ namespace TGS_Genesys_Teck.Controllers
                 // Verifica o resultado da inserção
                 if (resultado)
                 {
-                    return Json(new { success = true, message = "Agendamento inserido com sucesso!" });
+                    return Json(new { success = true, message = "Atendimento inserido com sucesso!" });
                 }
                 else
                 {

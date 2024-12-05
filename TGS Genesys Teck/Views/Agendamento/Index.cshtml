@@ -53,7 +53,7 @@
                 </thead>
             </table>
 
-            \<!-- Corpo da tabela rolável -->
+            <!-- Corpo da tabela rolável -->
             <div style="max-height: 300px; overflow-y: auto; overflow-x: auto;">
                 <table id="TbAgendamentosBody" class="table" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                     <tbody>
@@ -92,6 +92,11 @@
                         }
                     </tbody>
                 </table>
+            </div>
+
+            <!-- Contador de Registros Centralizado com Fonte Maior -->
+            <div style="text-align: center; margin-top: 10px;">
+                <strong style="font-size: 18px">Total de Usuários: <span id="registroCount">0</span></strong>
             </div>
 
         </div>
@@ -339,7 +344,10 @@
                             <!-- DropDown de Tipo de Serviço -->
                             <div class="mb-3 row">
                                 <div class="col-md-6">
-                                    @Html.DropDownList("TipoServico", ViewBag.lstTipoServico as SelectList, "Escolha o tipo de Serviço", new { @class = "form-control", @style = "width:230px; background-color: #EAE7DC; color: #333;", required = "required" })
+                                    @Html.DropDownList("TipoServico",
+                                             new SelectList(ViewBag.lstTipoServico, "Value", "Text", null),
+                                             "Escolha o serviço",
+                                             new { @class = "form-control", @style = "width:230px; background-color: #EAE7DC; color: #333;", required = "required" })
                                 </div>
                                 <div class="col-md-6">
                                     <label style="color:red">*</label>
@@ -347,7 +355,7 @@
                             </div>
 
                             <fieldset>
-                                <legend>Escolha o horário de atendimento:</legend>
+                                <legend>Escolha o horário de agendamento:</legend>
 
                                 <div class="mb-3 d-flex align-items-center">
                                     <input type="checkbox" id="chk08" class="form-check-input" value="08:00" style="margin-right: 10px;" data-group="horario" disabled>
@@ -392,7 +400,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                         <button type="button" class="btn btn-primary"
-                            onclick="InserirAgendamentoManutencao()">Adicionar</button>
+                            onclick="InserirAgendamento()">Adicionar</button>
                     </div>
                 </div>
             </div>
@@ -407,6 +415,35 @@
 
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script>
+
+
+            $(document).ready(function () {
+                // Função para atualizar o contador de registros visíveis
+                function atualizarContador() {
+                    var visibleRows = $('#TbAgendamentoBody tbody tr:visible').length; // Conta as linhas visíveis
+                    $('#registroCount').text(visibleRows); // Atualiza o contador
+                }
+
+                // Quando o usuário digitar no campo de filtro
+                $('#filtro').on('keyup', function () {
+                    var value = $(this).val().toLowerCase(); // Pega o valor do campo de filtro e converte para minúsculas
+
+                    // Filtra as linhas do corpo da tabela
+                    $('#TbAgendamentoBody tbody tr').each(function () {
+                        // Verifica se qualquer célula na linha contém o valor digitado no filtro
+                        var rowText = $(this).text().toLowerCase();
+                        // Exibe ou oculta a linha, dependendo de conter o valor
+                        $(this).toggle(rowText.indexOf(value) > -1);
+                    });
+
+                    // Atualiza o contador após filtrar as linhas
+                    atualizarContador();
+                });
+
+                // Inicializa o contador de registros ao carregar a página
+                atualizarContador();
+            });
+
             // Impede a digitação manual no campo de data
             document.getElementById('data_agdt').addEventListener('keydown', function (e) {
                 e.preventDefault(); // Bloqueia qualquer entrada do teclado
@@ -549,61 +586,47 @@
                 return dataHoraFormatada;
             }
 
-            function InserirAgendamentos() {
+            function InserirAgendamento() {
 
-                //var id =
-                var dataC = obterDataHoraFormatada();
+                // Data from hidden field or any other necessary values
+                var dataC = obterDataHoraFormatada();  // Assuming this function formats the current date/time.
                 var data = $("#data_agdt").val();
-                var servico = $("#DropServico").val();
-                var atendimentos = [];
-                if ($("#chk08").prop("checked")) atendimentos.push($("#chk08").val());
-                if ($("#chk10").prop("checked")) atendimentos.push($("#chk10").val());
-                if ($("#chk13").prop("checked")) atendimentos.push($("#chk13").val());
-                if ($("#chk15").prop("checked")) atendimentos.push($("#chk15").val());
-                if ($("#chk17").prop("checked")) atendimentos.push($("#chk17").val());
-                if ($("#chk19").prop("checked")) atendimentos.push($("#chk19").val());
+                var usuario = $("#DropUsuario").val();  // Getting value for "DropUsuario"
+                var tipoServico = $('#TipoServico option:selected').val(); // Getting value for "TipoServico"
+                var agendamentos = [];
+
+                // Check if the time slots are selected and push them into the atendimentos array
+                if ($("#chk08").prop("checked")) agendamentos.push($("#chk08").val());
+                if ($("#chk10").prop("checked")) agendamentos.push($("#chk10").val());
+                if ($("#chk13").prop("checked")) agendamentos.push($("#chk13").val());
+                if ($("#chk15").prop("checked")) agendamentos.push($("#chk15").val());
+                if ($("#chk17").prop("checked")) agendamentos.push($("#chk17").val());
+                if ($("#chk19").prop("checked")) agendamentos.push($("#chk19").val());
 
 
-                if (!id) {
-                    alert("Por favor, Insira aum Id");
-                    return;
-                }
 
-                if (!dataC) {
-                    alert("Por favor, selecione uma data de cadastro");
-                    return;
-                }
-                if (!data) {
-                    alert("Por favor, selecione uma data para o agendamento.");
-                    return;
-                }
-                if (!servico) {
-                    alert("Por favor, selecione o serviço.");
-                    return;
-                }
-                if (atendimentos.length === 0) {
-                    alert("Por favor, selecione pelo menos um horário para o agendamento.");
-                    return; // Retorna da função se nenhum horário foi selecionado
-                }
+                // Collect data for AJAX request
                 var dados = {
-                    id: id,
-                    dataC: dataC,
-                    data: data,
-                    servico: servico,
-                    atendimentos: atendimentos
+                    dtHoraAgendamento: dataC,
+                    dataAgendamento: data,
+                    horario: agendamentos,
+                    fkUsuarioId: usuario,
+                    fkServicoId: tipoServico,
+
                 };
                 console.log(dados)
+
+                // Perform the AJAX request
                 $.ajax({
-                    url: '/Agendamento/InserirAgendamentos',
+                    url: '/Agendamento/InserirAgendamento',
                     type: "POST",
                     dataType: "json",
                     data: dados,
                     success: function (response) {
                         if (response.success) {
                             alert("Agendamento(s) cadastrado(s) com sucesso!");
-                            $('#InserirAgendamento').modal('hide'); // Substitua 'seuModal' pelo ID do seu modal
-                            // Atualizar a página
-                            location.reload();
+                            $('#InserirAgendamento').modal('hide');  // Close the modal
+                            location.reload();  // Reload the page
                         } else {
                             alert("Erro ao cadastrar agendamento(s).");
                         }
