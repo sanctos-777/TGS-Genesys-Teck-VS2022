@@ -53,6 +53,18 @@ namespace TGS_Genesys_Teck.Controllers
                 ViewBag.Usuarios = selectList;
             }
 
+            var listaHorario = new List<SelectListItem>
+            {
+                new SelectListItem { Value = "8", Text = "08:00:00" },
+                new SelectListItem { Value = "10", Text = "10:00:00" },
+                new SelectListItem { Value = "13", Text = "13:00:00" },
+                new SelectListItem { Value = "15", Text = "15:00:00" },
+                new SelectListItem { Value = "17", Text = "17:00:00" },
+                new SelectListItem { Value = "19", Text = "19:00:00" }
+            };
+
+            ViewBag.lstHorarios = listaHorario;
+
             var agendamentos = _agendamentoRepositorio.ListarAgendamentos();
             return View(agendamentos);
         }
@@ -90,49 +102,28 @@ namespace TGS_Genesys_Teck.Controllers
                 return Json(new { success = false, message = "Erro ao processar a solicitação. Detalhes: " + ex.Message });
             }
         }
-        public IActionResult AtualizarAgendamento(int id, DateTime dtHoraAgendamento, DateOnly dataAgendamento, TimeOnly horario, int fkUsuarioId, int fkServicoId)
+        public IActionResult AlterarAgendamento(int id, string data, int servico, TimeOnly horario)
         {
-            try
-            {
-                // Chama o repositório para atualizar o atendimento
-                var resultado = _agendamentoRepositorio.AtualizarAgendamento(id, dtHoraAgendamento, dataAgendamento, horario, fkUsuarioId, fkServicoId);
 
-                if (resultado)
-                {
-                    return Json(new { success = true, message = "Agendamento atualizado com sucesso!" });
-                }
-                else
-                {
-                    return Json(new { success = false, message = "Erro ao atualizar o agendamento. Verifique se o agendamento existe." });
-                }
-            }
-            catch (Exception ex)
+            var rs = _agendamentoRepositorio.AlterarAgendamento(id, data, servico, horario);
+            if (rs)
             {
-                return Json(new { success = false, message = "Erro ao processar a solicitação. Detalhes: " + ex.Message });
+                return Json(new { success = true });
+            }
+            else
+            {
+                return Json(new { success = false });
             }
         }
+
         public IActionResult ExcluirAgendamento(int id)
         {
-            try
-            {
-                // Chama o repositório para excluir o atendimento
-                var resultado = _agendamentoRepositorio.ExcluirAgendamento(id);
 
-                if (resultado)
-                {
-                    return Json(new { success = true, message = "Agendamento excluído com sucesso!" });
-                }
-                else
-                {
-                    return Json(new { success = false, message = "Não foi possível excluir o agendamento. Verifique se ele está vinculado a outros registros no sistema." });
-                }
-            }
-            catch (Exception ex)
-            {
-                // Captura qualquer erro e inclui a mensagem detalhada da exceção
-                return Json(new { success = false, message = "Erro ao processar a solicitação. Detalhes: " + ex.Message });
-            }
-        }	
+            var rs = _agendamentoRepositorio.ExcluirAgendamento(id);
+            return Json(new { success = rs });
+
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -42,6 +42,43 @@ namespace TGS_Genesys_Teck.Repositorio
             }
         }
 
+        public bool AlterarAgendamento(int id, string data, int servico, TimeOnly horario)
+        {
+            try
+            {
+                TbAgendamento agt = _context.TbAgendamentos.Find(id);
+                DateOnly dtHoraAgendamento;
+                if (agt != null)
+                {
+                    agt.IdAgendamento = id;
+                    if (data != null)
+                    {
+                        if (DateOnly.TryParse(data, out dtHoraAgendamento))
+                        {
+                            agt.DataAgendamento = dtHoraAgendamento;
+                        }
+                    }
+
+                    // Corrigido a verificação do tipo TimeOnly
+                    if (horario != TimeOnly.MinValue)  // Verificando se o horário não é o valor padrão
+                    {
+                        agt.Horario = horario;
+                    }
+
+                    agt.IdServico = servico;
+                    _context.SaveChanges();
+                    return true;
+                }
+
+                return false;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        
+
 
         // Método para listar todos os agendamentos
         public List<ViewAgendamentoVM> ListarAgendamentos()
@@ -113,29 +150,25 @@ namespace TGS_Genesys_Teck.Repositorio
         {
             try
             {
-                // Buscando o atendimento pelo ID
-                var agendamento = _context.TbAgendamentos.FirstOrDefault(a => a.IdAgendamento == id);
 
-                if (agendamento == null)
+
+                var agt = _context.TbAgendamentos.Where(a => a.IdAgendamento == id).FirstOrDefault();
+                if (agt != null)
                 {
-                    throw new KeyNotFoundException("Agendamento não encontrado.");
+                    _context.TbAgendamentos.Remove(agt);
+
                 }
-
-                // Removendo o agendamento
-                _context.TbAgendamentos.Remove(agendamento);
-                _context.SaveChanges(); // Persistindo a exclusão
-
-                return true; // Retorna true indicando sucesso
+                _context.SaveChanges();
+                return true;
             }
-            catch (Exception ex)
-            {
-                // Em caso de erro, pode-se logar a exceção
-                Console.WriteLine($"Erro ao excluir o agendamento com ID {id}: {ex.Message}");
 
-                // Lançando a exceção novamente para ser tratada pelo controlador
-                throw new Exception($"Erro ao excluir o agendamento: {ex.Message}");
+            catch (Exception)
+            {
+
+                return false;
             }
         }
+
 
         public List<AgendamentoVM> ConsultarAgendamento(string datap)
         {

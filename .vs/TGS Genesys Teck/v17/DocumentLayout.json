@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|c:\\users\\aluno noite\\desktop\\tgs-genesys-teck-vs2022\\tgs genesys teck\\views\\agendamento\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|solutionrelative:tgs genesys teck\\views\\agendamento\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|c:\\users\\aluno noite\\desktop\\tgs-genesys-teck-vs2022\\tgs genesys teck\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|solutionrelative:tgs genesys teck\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,22 +28,9 @@
               "RelativeDocumentMoniker": "TGS Genesys Teck\\Views\\Agendamento\\Index.cshtml",
               "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Views\\Agendamento\\Index.cshtml",
               "RelativeToolTip": "TGS Genesys Teck\\Views\\Agendamento\\Index.cshtml",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAAAGMAAAASAAAA",
+              "ViewState": "AQIAAGYBAAAAAAAAAAAUwFIAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T19:53:49.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AgendamentoController.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Controllers\\AgendamentoController.cs",
-              "RelativeDocumentMoniker": "TGS Genesys Teck\\Controllers\\AgendamentoController.cs",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Controllers\\AgendamentoController.cs",
-              "RelativeToolTip": "TGS Genesys Teck\\Controllers\\AgendamentoController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAD4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T19:53:01.67Z",
+              "WhenOpened": "2024-12-06T18:30:00.269Z",
               "EditorCaption": ""
             }
           ]
