@@ -1,4 +1,6 @@
-﻿@{
+﻿@using System.Text.Json
+@model IEnumerable<TGS_Genesys_Teck.Models.ViewAgendamentoVM>
+@{
     Layout = "~/Views/Shared/_Layout_Gerenciamento.cshtml";
 }
 
@@ -52,37 +54,47 @@
                             <th style="color: #002333;text-align: center;">Excluir</th>
                         </tr>
                     </thead>
-                    <tbody>
-
-                        <tr>
-                            <td>id</td>
-                            <td>Nome</td>
-                            <td>Email</td>
-                            <td>Telefone</td>
-                            <td>AgendarData</td>
-                            <td>Horario</td>
-                            <td>Serviço</td>
-                            <td>Valor</td>
-                            <td>Confirmacao</td>
-
-                            <td class="text-center">
-                                <button class="btn btn-default"
-                                    onclick="definirEdt('')"
-                                    data-bs-toggle="modal" data-bs-target="#EditarUsuario">
-                                    <i class="fa fa-edit"></i>
-                                </button>
-                            </td>
-                            <td class="text-center">
-                                <button class="btn btn-default"
-                                    onclick="definirExc('')"
-                                    data-bs-toggle="modal" data-bs-target="#ExcluirUsuario">
-                                    <i class="fa fa-trash text-danger"></i>
-                                </button>
-                            </td>
-
-                        </tr>
-
-                    </tbody>
+                    <div style="max-height: 300px; overflow-y: auto; overflow-x: auto;">
+                       
+                        <table id="TbAgendamentosBody" class="table" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+                            <tbody>
+                                @if (Model != null && Model.Any())
+                                {
+                                    @foreach (var atendimento in Model)
+                                    {
+                                        <tr>
+                                            <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px; min-width: 50px">@atendimento.IdAgendamento</td>
+                                            <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px; min-width: 150px">@atendimento.DtHoraAgendamento</td>
+                                            <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px; min-width: 150px">@atendimento.DataAgendamento.ToString("dd/MM/yyyy")</td>
+                                            <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px; min-width: 150px">@atendimento.Horario.ToString("HH:mm")</td>
+                                            <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px; min-width: 150px">@atendimento.Nome</td>
+                                            <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px; min-width: 150px; word-wrap: break-word;">@atendimento.Email</td>
+                                            <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px; min-width: 150px">@atendimento.Telefone</td>
+                                            <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px; min-width: 150px">@atendimento.TipoServico</td>
+                                            <td style="color: #EAE7DC; border: 1px solid #ddd; padding: 8px; min-width: 150px">@atendimento.Valor.ToString("C")</td>
+                                            <td class="text-center" style="border: 1px solid #ddd; min-width: 80px;">
+                                                <button class="btn btn-default" onclick="definirEdt('@atendimento.IdAgendamento', '@atendimento.Nome', '@atendimento.Email', '@atendimento.Telefone', '@atendimento.DataAgendamento', '@atendimento.Horario', '@atendimento.TipoServico', '@atendimento.Valor')" data-bs-toggle="modal" data-bs-target="#EditarAgendamento" style="color: #EAE7DC;">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                            </td>
+                                            <td class="text-center" style="border: 1px solid #ddd; min-width: 80px;">
+                                                <button class="btn btn-default" onclick="definirExc('@atendimento.IdAgendamento', '@atendimento.Nome', '@atendimento.Email', '@atendimento.Telefone', '@atendimento.DataAgendamento', '@atendimento.Horario', '@atendimento.TipoServico', '@atendimento.Valor');" data-bs-toggle="modal" data-bs-target="#ExcluirAgendamento" style="color: #EAE7DC;">
+                                                    <i class="fa fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="11" style="text-align: center; color: #EAE7DC; padding: 8px;">Nenhum atendimento encontrado.</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    
+                    </div>
                 </table>
             </div>
 
@@ -564,7 +576,16 @@
 
 
         </script>
+        <script>
+            // Script to handle the dropdown functionality
+            document.querySelector('.dropdown').addEventListener('mouseover', function () {
+                this.querySelector('.dropdown-content').style.display = 'block';
+            });
 
+            document.querySelector('.dropdown').addEventListener('mouseout', function () {
+                this.querySelector('.dropdown-content').style.display = 'none';
+            });
+        </script>
     </section>
 
     <!--Butao Voltar-->

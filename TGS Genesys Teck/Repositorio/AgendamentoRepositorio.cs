@@ -83,7 +83,7 @@ namespace TGS_Genesys_Teck.Repositorio
         // Método para listar todos os agendamentos
         public List<ViewAgendamentoVM> ListarAgendamentos()
         {
-            List<ViewAgendamentoVM> listAtendimentos = new List<ViewAgendamentoVM>();
+            List<ViewAgendamentoVM> listAgendamentos = new List<ViewAgendamentoVM>();
 
             // Recuperando todos os atendimentos do DbSet
             var listTb = _context.ViewAgendamentos.ToList();
@@ -91,7 +91,7 @@ namespace TGS_Genesys_Teck.Repositorio
             // Convertendo os atendimentos de TbAtendimento para AtendimentoVM
             foreach (var item in listTb)
             {
-                var atendimento = new ViewAgendamentoVM
+                var agendamento = new ViewAgendamentoVM
                 {
                     IdAgendamento = item.IdAgendamento,
                     DtHoraAgendamento = item.DtHoraAgendamento,
@@ -105,10 +105,42 @@ namespace TGS_Genesys_Teck.Repositorio
 
                 };
 
-                listAtendimentos.Add(atendimento);
+                listAgendamentos.Add(agendamento);
             }
 
-            return listAtendimentos;
+            return listAgendamentos;
+        }
+
+        public List<ViewAgendamentoVM> ListarAgendamentosCliente()
+        {
+            // Obtendo o ID do usuário a partir da variável de ambiente
+            string nome = Environment.GetEnvironmentVariable("USUARIO_NOME");
+
+            List<ViewAgendamentoVM> listAgendamentos = new List<ViewAgendamentoVM>();
+
+            // Recuperando todos os agendamentos que correspondem ao ID do usuário
+            var listTb = _context.ViewAgendamentos.Where(x => x.Nome == nome).ToList();
+
+            // Convertendo cada agendamento para ViewAgendamentoVM
+            foreach (var item in listTb)
+            {
+                var agendamento = new ViewAgendamentoVM
+                {
+                    IdAgendamento = item.IdAgendamento,
+                    DtHoraAgendamento = item.DtHoraAgendamento,
+                    DataAgendamento = item.DataAgendamento,
+                    Horario = item.Horario,
+                    TipoServico = item.TipoServico,
+                    Valor = item.Valor,
+                    Nome = item.Nome,
+                    Email = item.Email,
+                    Telefone = item.Telefone,
+                };
+
+                listAgendamentos.Add(agendamento);
+            }
+
+            return listAgendamentos;
         }
 
         // Método para atualizar um Agendamento
