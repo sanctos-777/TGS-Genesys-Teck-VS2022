@@ -38,73 +38,57 @@
                 <i class="fas fa-home fa-lg" aria-hidden="true" style="color: white;"></i>
                 <a href="/Home/Index" style="margin-left: 10px; color: white;">Inicio</a>
             </span>
-             @if (usuarioAutenticado)
+            @if (usuarioAutenticado)
             {
                 @if (tipoUsuario == "1")
                 {
-                    <div class="dropdown" style="position: relative; display: inline-block;">
+                    <div class="dropdown">
                         <span style="display: flex; align-items: center; margin-right: 20px;">
-                            <i class="fa fa-user" aria-hidden="true" style="color: white;"></i>
-                            <a href="/Usuario/Login" style="margin-left: 10px;">@usuarioNome</a>
-                            <i class="fa fa-chevron-down" aria-hidden="true" style="color: #F7F5F2; margin-left: 5px;"></i>
-
+                            <i class="fa fa-user" aria-hidden="true" style="color: #ddd;"></i>
+                            <a href="#" style="margin-left: 10px;">@usuarioNome</a>
+                            <i class="fa fa-chevron-down" aria-hidden="true" style=" margin-left: 5px;color: #ddd;"></i>
                         </span>
                         <div class="dropdown-content">
-
-                            <!-- Item de menu 1: Usuarios -->
-                            <a href="/Usuario/Index"
-                               style="color: white; padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fa fa-users" aria-hidden="true" style="margin-right: 9px; color: white;"></i>
+                            <a href="/Usuario/Index">
+                                <i class="fa fa-users" aria-hidden="true" style="margin-right: 20px; color: "></i>
                                 Usuarios
                             </a>
-
-                            <!-- Item de menu 2: Agendamento Admin -->
-                            <a href="/Agendamento/Index"
-                               style="color: white; padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 9px; color: white;"></i>
-
+                            <a href="/Agendamento/Index">
+                                <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 20px; "></i>
                                 Agendamento Admin
-                            </a>                           
-
-                           
-                            <a href="/Servico/Index"
-                               style="color: white; padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fas fa-gavel fa-lg" aria-hidden="true" style="margin-right: 9px; color: white;"></i>
-
-                                Serviços
                             </a>
 
-                            <!-- Item de menu 5: Relatório -->
-                            <a href=""
-                               style="color: white; padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fa fa-file" aria-hidden="true" style="margin-right: 9px; color: white;"></i>
-
+                            <a href="/Servico/Index">
+                                <i class="fa fa-file-archive" aria-hidden="true" style="margin-right: 20px; "></i>
+                                Serviços
+                            </a>
+                            <a href="#logout">
+                                <i class="fa fa-file-archive" aria-hidden="true" style="margin-right: 20px; "></i>
                                 Relatório
                             </a>
                             <a href="javascript:void(0);" onclick="logout()" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
                                 <i class="fa fa-sign-out-alt" aria-hidden="true" style="margin-right: 8px;"></i> Sair
                             </a>
-
                         </div>
-
                     </div>
+
                 }
                 else
                 {
-                    <!-- Menu do Usuário -->
-                    <div class="dropdown" style="position: relative; display: inline-block;">
+                    <div class="dropdown">
                         <span style="display: flex; align-items: center; margin-right: 20px;">
-                            <i class="fa fa-user" aria-hidden="true" style="color: #F7F5F2;"></i>
+                            <i class="fa fa-user" aria-hidden="true" style="color: #ddd;"></i>
                             <a href="#" style="margin-left: 10px;">@usuarioNome</a>
-                            <i class="fa fa-chevron-down" aria-hidden="true" style="color: #F7F5F2; margin-left: 5px;"></i>
-
+                            <i class="fa fa-chevron-down" aria-hidden="true" style="color: #ddd; margin-left: 5px;"></i>
                         </span>
-                        <div class="dropdown-content" style="display: none; position: absolute; background-color: #F7F5F2; width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; padding: 8px; border-radius: 3%; border: #F7F5F2 solid 1px; box-shadow: 5px #F7F5F2;">
-                            <a href="/Agendamento/Cliente" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 8px;"></i>Agendamento User
+                        <div class="dropdown-content">
+                            <a href="/Agendamento/Cliente">
+                                <i class="fa fa-calendar" aria-hidden="true" style="margin-right: 20px;"></i>
+                                Agendamento User
                             </a>
-                            <a href="/Agendamento/Cadastro" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
-                                <i class="fa fa-file" aria-hidden="true" style="margin-right: 8px;"></i>Cadastro Agendamento
+                            <a href="/Agendamento/Cadastro">
+                                <i class="fa fa-file" aria-hidden="true" style="margin-right: 20px;"></i>
+                                Cadastro Agendamento
                             </a>
                             <a href="javascript:void(0);" onclick="logout()" style="padding: 7px; text-decoration: none; display: flex; align-items: center; margin: 5px;">
                                 <i class="fa fa-sign-out-alt" aria-hidden="true" style="margin-right: 8px;"></i> Sair
@@ -112,7 +96,16 @@
                         </div>
                     </div>
                 }
-                
+            }
+            else
+            {
+                <!-- Menu de Login (Quando o usuário não está autenticado) -->
+                <div class="dropdown" style="position: relative; display: inline-block;">
+                    <span style="display: flex; align-items: center; margin-right: 20px;">
+                        <i class="fa fa-user" aria-hidden="true" style="color: #ddd;"></i>
+                        <a href="/Usuario/Login" style="margin-left: 10px;">Login</a>
+                    </span>
+                </div>
             }
                      
         </nav>

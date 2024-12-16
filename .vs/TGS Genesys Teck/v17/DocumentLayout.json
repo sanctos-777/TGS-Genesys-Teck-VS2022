@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|c:\\users\\aluno noite\\desktop\\tgs-genesys-teck-vs2022\\tgs genesys teck\\views\\shared\\_layout_gerenciamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|solutionrelative:tgs genesys teck\\views\\shared\\_layout_gerenciamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|c:\\users\\aluno noite\\desktop\\tgs-genesys-teck-vs2022\\tgs genesys teck\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|solutionrelative:tgs genesys teck\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|c:\\users\\aluno noite\\desktop\\tgs-genesys-teck-vs2022\\tgs genesys teck\\views\\servico\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{194CBB25-13A9-4DFD-AE04-9ACD1943E4D2}|TGS Genesys Teck\\TGS Genesys Teck.csproj|solutionrelative:tgs genesys teck\\views\\servico\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout_Gerenciamento.cshtml",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Views\\Shared\\_Layout_Gerenciamento.cshtml",
-              "RelativeDocumentMoniker": "TGS Genesys Teck\\Views\\Shared\\_Layout_Gerenciamento.cshtml",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Views\\Shared\\_Layout_Gerenciamento.cshtml",
-              "RelativeToolTip": "TGS Genesys Teck\\Views\\Shared\\_Layout_Gerenciamento.cshtml",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Views\\Servico\\Index.cshtml",
+              "RelativeDocumentMoniker": "TGS Genesys Teck\\Views\\Servico\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Views\\Servico\\Index.cshtml",
+              "RelativeToolTip": "TGS Genesys Teck\\Views\\Servico\\Index.cshtml",
+              "ViewState": "AQIAAHwBAAAAAAAAAAAUwLsCAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T19:59:17.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "TGS Genesys Teck\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\TGS-Genesys-Teck-VS2022\\TGS Genesys Teck\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "TGS Genesys Teck\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAABcAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T19:58:54.325Z",
+              "WhenOpened": "2024-12-16T20:13:01.272Z",
               "EditorCaption": ""
             }
           ]

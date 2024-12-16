@@ -4,8 +4,41 @@
     Layout = "~/Views/Shared/_Layout_Gerenciamento.cshtml";
 }
 
-<body>
+<style>
+    /* Estilo para o overlay (fundo escuro) */
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
+        z-index: 9998; /* Colocar abaixo do loader */
+        display: none; /* Inicialmente escondido */
+    }
 
+    /* Estilo para o loader */
+    #loader {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px 30px;
+        background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro para o loader */
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+        z-index: 9999; /* Colocar acima do overlay */
+        display: none; /* Inicialmente escondido */
+    }
+</style>
+
+<body>
+    <!-- Overlay e Loader -->
+    <div id="overlay" style="display: none;"></div>
+    <div id="loader" style="display: none;">
+        <i class="fa fa-spinner fa-spin"></i> Carregando...
+    </div>
     <section class="maneger-page-section">
         <div class="container page-maneger">
 
@@ -280,6 +313,7 @@
 
 
        
+       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Adiciona o SweetAlert2 -->
 
         <script src="~/lib/swiper/swiper-bundle.min.js"></script>
 
@@ -407,7 +441,7 @@
                     });
                 }
             });
-            
+
             $(document).ready(function () {
                 // Função para atualizar o contador de registros visíveis
                 function atualizarContador() {
@@ -475,8 +509,10 @@
                 var email = $('#Email').val();
                 var senha = $('#Senha').val();
                 var telefone = $('#Telefone').val();
-                var tipoUsuario = $('#TipoUsuario option:selected').val();
+                var tipoUsuario = $('select[name="TipoUsuario"] option:selected').val();  // Atualizado
 
+                // Exibe o valor do tipo de usuário no console
+                console.log("Tipo de Usuário selecionado: " + tipoUsuario);
                 if (nome.trim() === "") {
                     alert("Por favor, preencha o campo Nome.");
                     return;
@@ -489,16 +525,18 @@
                     alert("Por favor, insira um email válido.");
                     return;
                 }
-
-                if (tipoUsuario === "Escolha o Tipo de Usuário") {
+                // Verifica se o tipo de usuário foi selecionado corretamente
+                if (tipoUsuario === "" || tipoUsuario === "Escolha o tipo de Usuário") {
                     alert("Por favor, selecione o tipo de usuário.");
                     return;
                 }
-
                 if (telefone.trim() === "") {
                     alert("Por favor, insira um número de telefone válido.");
                     return;
                 }
+                // Show the overlay and loader
+                $("#overlay").show();  // Exibir o overlay escuro
+                $("#loader").show();   // Exibir o loader
 
                 var dados = {
                     Nome: nome,
@@ -507,28 +545,65 @@
                     Telefone: telefone,
                     TipoUsuario: tipoUsuario
                 };
-
-                console.log(dados)
+                console.log(dados);
                 // Faça a chamada AJAX
                 $.ajax({
-                    url: '/Usuario/InserirUsuario',
+                    url: '@Url.Action("InserirUsuario", "Usuario")',
                     type: "POST",
                     dataType: "json",
                     data: dados,
                     success: function (resultado) {
+                        // Hide the overlay and loader after the response
+                        $("#overlay").hide();
+                        $("#loader").hide();
                         if (resultado.success) {
-                            alert(resultado.message);  // Exibe a mensagem de sucesso
-                            // Fecha o modal
-                            $('#InserirUsuario').modal('hide');
-                            // Recarrega a págInserirUsuarioina
-                            location.reload();
+                            Swal.fire({
+                                position: "top-end",
+                                icon: 'success',
+                                title: 'Sucesso',
+                                text: 'Usuário cadastrado com sucesso!',
+                                confirmButtonText: 'OK',
+                                width: '400px',  // Defina a largura desejada aqui
+                                padding: '20px', // Ajuste o preenchimento interno do alerta
+                                customClass: {
+                                    popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                                }
+                            }).then(function () {
+                                // Fecha o modal
+                                $('#InserirUsuario').modal('hide');
+                                // Recarrega a página
+                                location.reload(); // Recarrega a página atual
+                            });
                         } else {
-                            alert(resultado.message);  // Exibe a mensagem de falha
+                            Swal.fire({
+                                position: "top-end",
+                                icon: 'error',
+                                title: 'Erro',
+                                text: resultado.message,
+                                confirmButtonText: 'OK',
+                                width: '400px',  // Defina a largura desejada aqui
+                                padding: '20px', // Ajuste o preenchimento interno do alerta
+                                customClass: {
+                                    popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                                }
+                            });
                         }
                     },
                     error: function () {
-                        alert('Erro na requisição AJAX.');
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: 'Ocorreu um erro ao processar a solicitação.',
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
                     }
+
                 });
             }
 
@@ -562,6 +637,9 @@
                     alert("Por favor, insira um número de telefone válido.");
                     return;
                 }
+                // Show the overlay and loader
+                $("#overlay").show();  // Exibir o overlay escuro
+                $("#loader").show();   // Exibir o loader
 
                 var dados = {
                     Id: id, // ID do usuário a ser atualizado
@@ -574,55 +652,138 @@
 
                 // Requisição AJAX para atualizar o usuário
                 $.ajax({
-                    url: '/Usuario/AtualizarUsuario',  // URL para a ação de atualizar no servidor
+                    url: '@Url.Action("AtualizarUsuario", "Usuario")',  // URL para a ação de atualizar no servidor
                     type: "POST",
                     dataType: "json",
                     data: dados,
                     success: function (resultado) {
+                        // Hide the overlay and loader after the response
+                        $("#overlay").hide();
+                        $("#loader").hide();
                         if (resultado.success) {
-                            alert(resultado.message);  // Exibe a mensagem de sucesso
-                            $('#InserirUsuario').modal('hide'); // Fecha o modal de inserção/atualização
-                            location.reload(); // Recarrega a página para refletir as alterações
+                            Swal.fire({
+                                position: "top-end",
+                                icon: 'success',
+                                title: 'Sucesso',
+                                text: 'Usuário atualizado com sucesso!',
+                                confirmButtonText: 'OK',
+                                width: '400px',  // Defina a largura desejada aqui
+                                padding: '20px', // Ajuste o preenchimento interno do alerta
+                                customClass: {
+                                    popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                                }
+                            }).then(function () {
+                                // Fecha o modal
+                                $('#EditarUsuario').modal('hide');
+                                // Recarrega a página
+                                location.reload(); // Recarrega a página atual
+                            });
+
+
                         } else {
-                            alert(resultado.message);  // Exibe a mensagem de falha
+                            Swal.fire({
+                                position: "top-end",
+                                icon: 'error',
+                                title: 'Erro',
+                                text: resultado.message,
+                                confirmButtonText: 'OK',
+                                width: '400px',  // Defina a largura desejada aqui
+                                padding: '20px', // Ajuste o preenchimento interno do alerta
+                                customClass: {
+                                    popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                                }
+                            });
                         }
                     },
                     error: function () {
-                        alert('Erro na requisição AJAX.');
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
                     }
                 });
             }
 
             function ExcluirUsuario() {
+
                 var id = $('#ExcId').val();  // Pega o valor do ID do campo hidden
                 console.log("ID a ser excluído: ", id);  // Verifique se o ID está sendo corretamente recuperado
+
+                // Show the overlay and loader
+                $("#overlay").show();  // Exibir o overlay escuro
+                $("#loader").show();   // Exibir o loader
 
                 var dados = { Id: id };  // Dados a enviar para o servidor (ID do usuário)
 
                 // Requisição AJAX para excluir o usuário
                 $.ajax({
-                    url: '/Usuario/ExcluirUsuario',  // URL para a ação de exclusão no servidor
+                    url: '@Url.Action("ExcluirUsuario", "Usuario")',
                     type: "POST",
                     dataType: "json",
                     data: dados,
                     success: function (resultado) {
-                        // Verifica se a resposta contém sucesso ou falha
+                        // Hide the overlay and loader after the response
+                        $("#overlay").hide();
+                        $("#loader").hide();
                         if (resultado.success) {
-                            alert(resultado.message);  // Exibe a mensagem de sucesso
-                            location.reload(); // Recarrega a página para refletir as mudanças
+                            Swal.fire({
+                                position: "top-end",
+                                icon: 'success',
+                                title: 'Sucesso',
+                                text: 'Usuário excluido com sucesso!',
+                                confirmButtonText: 'OK',
+                                width: '400px',  // Defina a largura desejada aqui
+                                padding: '20px', // Ajuste o preenchimento interno do alerta
+                                customClass: {
+                                    popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                                }
+                            }).then(function () {
+                                // Fecha o modal
+                                $('#InserirUsuario').modal('hide');
+                                // Recarrega a página
+                                location.reload(); // Recarrega a página atual
+                            });
                         } else {
-                            alert("Esse usuario possui relacionamento com atendimento e não pode ser excluido");  // Exibe a mensagem de falha
+                            Swal.fire({
+                                position: "top-end",
+                                icon: 'error',
+                                title: 'Erro',
+                                text: resultado.message,
+                                confirmButtonText: 'OK',
+                                width: '400px',  // Defina a largura desejada aqui
+                                padding: '20px', // Ajuste o preenchimento interno do alerta
+                                customClass: {
+                                    popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                                }
+                            });
                         }
                     },
                     error: function () {
-                        alert('Erro na requisição AJAX.');  // Caso haja algum erro na requisição AJAX
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: 'Ocorreu um erro ao processar a solicitação.',
+                            confirmButtonText: 'OK',
+                            width: '100px',
+                            height: '100px',
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
                     }
                 });
             }
 
-
-
-        </script>
+        </script>  
 
     </section>
    

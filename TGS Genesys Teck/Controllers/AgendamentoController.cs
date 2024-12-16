@@ -72,6 +72,49 @@ namespace TGS_Genesys_Teck.Controllers
         public IActionResult Cliente()
         {
 
+            var servicos = new ServicoRepositorio(_context);
+            var nomeServicos = servicos.ListarNomesServicos();
+            if (nomeServicos != null && nomeServicos.Any())
+            {
+                // Cria a lista de SelectListItem
+                var selectList = nomeServicos.Select(u => new SelectListItem
+                {
+                    Value = u.Id.ToString(),  // O valor do item será o ID do usuário
+                    Text = u.TipoServico             // O texto exibido será o nome do usuário
+                }).ToList();
+
+                // Passa a lista para o ViewBag para ser utilizada na view
+                ViewBag.lstTipoServico = selectList;
+            }
+
+            // Chama o método ListarNomesAgendamentos para obter a lista de usuários
+            var usuarios = _agendamentoRepositorio.ListarNomesAgendamentos();
+
+            if (usuarios != null && usuarios.Any())
+            {
+                // Cria a lista de SelectListItem
+                var selectList = usuarios.Select(u => new SelectListItem
+                {
+                    Value = u.Id.ToString(),  // O valor do item será o ID do usuário
+                    Text = u.Nome             // O texto exibido será o nome do usuário
+                }).ToList();
+
+                // Passa a lista para o ViewBag para ser utilizada na view
+                ViewBag.Usuarios = selectList;
+            }
+
+            var listaHorario = new List<SelectListItem>
+            {
+                new SelectListItem { Value = "8", Text = "08:00:00" },
+                new SelectListItem { Value = "10", Text = "10:00:00" },
+                new SelectListItem { Value = "13", Text = "13:00:00" },
+                new SelectListItem { Value = "15", Text = "15:00:00" },
+                new SelectListItem { Value = "17", Text = "17:00:00" },
+                new SelectListItem { Value = "19", Text = "19:00:00" }
+            };
+
+            ViewBag.lstHorarios = listaHorario;
+
             var agendamentos = _agendamentoRepositorio.ListarAgendamentosCliente();
             return View(agendamentos);
         }
