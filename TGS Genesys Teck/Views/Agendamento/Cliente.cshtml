@@ -289,6 +289,9 @@
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
 
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Adiciona o SweetAlert2 -->
+
         <script>
 
             var listaOriginalHorario;
@@ -458,9 +461,7 @@
             function AlterarAgendamento() {
 
                 var id = $("#EdtId").val();
-                // Show the overlay and loader
-                $("#overlay").show();  // Exibir o overlay escuro
-                $("#loader").show();   // Exibir o loader
+                
                 var servico = $('#EdtTipoServico option:selected').val();
                 var data;
                 var horario;
@@ -510,23 +511,58 @@
                     dataType: "json",
                     data: dados,
 
-                    success: function (response) {
+                    success: function (resultado) {
 
                         // Hide the overlay and loader after the response
                         $("#overlay").hide();
                         $("#loader").hide();
 
-                        if (response.success) {
-                            alert("Agendamento(s) Alterados(s) com sucesso!");
-                            $('#EditarAgendamento').modal('hide'); // Substitua 'seuModal' pelo ID do seu modal
-                            // Atualizar a página
-                            location.reload();
+                        if (resultado.success) {
+                            Swal.fire({
+                                position: "top-end",
+                                icon: 'success',
+                                title: 'Sucesso',
+                                text: 'Agendamento cadastrado com sucesso!',
+                                confirmButtonText: 'OK',
+                                width: '400px',  // Defina a largura desejada aqui
+                                padding: '20px', // Ajuste o preenchimento interno do alerta
+                                customClass: {
+                                    popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                                }
+                            }).then(function () {
+                                // Fecha o modal
+                                $('#InserirAgendamento').modal('hide');
+                                // Recarrega a página
+                                location.reload(); // Recarrega a página atual
+                            });
                         } else {
-                            alert("Erro ao alterar agendamento(s).");
+                            Swal.fire({
+                                position: "top-end",
+                                icon: 'error',
+                                title: 'Erro',
+                                text: resultado.message,
+                                confirmButtonText: 'OK',
+                                width: '400px',  // Defina a largura desejada aqui
+                                padding: '20px', // Ajuste o preenchimento interno do alerta
+                                customClass: {
+                                    popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                                }
+                            });
                         }
                     },
                     error: function (xhr, textStatus, errorThrown) {
-                        alert("Erro ao cadastrar agendamento(s): " + errorThrown);
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
                     }
                 });
             }
